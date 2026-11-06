@@ -599,6 +599,63 @@ for _c in SCRAPE:
                        'https://www.auction.com/residential/tx/active_lt/valuation_estimate%20asc_st']
 
 
+# ---------------------------------------------------------------- Public Surplus (Texas real estate only)
+PS_JS = """() => {
+  const out = [];
+  const as = [...document.querySelectorAll('a[href*="auc="]')];
+  for (let i = 0; i < as.length; i++) {
+    const m = as[i].href.match(/auc=(\\d+)/);
+    if (!m) continue;
+    const t = as[i].innerText.trim();
+    if (/^[A-Z]{2}$/.test(t)) {
+      const nx = as.slice(i + 1, i + 3).find(a => a.href === as[i].href && !/^[A-Z]{2}$/.test(a.innerText.trim()));
+      out.push([m[1], t, nx ? nx.innerText.trim() : '']);
+    }
+  }
+  return out;
+}"""
+
+
+async def discover_publicsurplus(ctx):
+    found = {}
+    page = await ctx.new_page()
+    try:
+        await page.goto('https://www.publicsurplus.com/sms/browse/cataucs?catid=15', wait_until='domcontentloaded', timeout=60000)
+        for pg in range(40):
+            await page.wait_for_timeout(3000)
+            before = len(found)
+            for aid, st, title in await page.evaluate(PS_JS):
+                if st == 'TX':
+                    found[aid] = title
+            nxt = page.locator('a:has-text("Next")').first
+            if await nxt.count() == 0 or (pg > 0 and len(found) == before and pg > 8):
+                break
+            try:
+                await nxt.click(timeout=8000)
+            except Exception:
+                break
+    except Exception as e:
+        print(f'discover PublicSurplus error {type(e).__name__}: {str(e)[:80]}', flush=True)
+    finally:
+        await page.close()
+    new = 0
+    for aid, title in found.items():
+        if f'PublicSurplus|{aid}' not in KNOWN:
+            add_listing('PublicSurplus', aid, f'https://www.publicsurplus.com/sms/auction/view?auc={aid}',
+                        address=(title or 'Public Surplus ' + aid) + ' TX'); new += 1
+    print(f'discover PublicSurplus: {len(found)} TX on site, {new} new', flush=True)
+
+
+async def discover_loop(ctx):
+    while True:
+        for cfg in SCRAPE:
+            await scrape_site(ctx, cfg)
+        await discover_servicelink(ctx)
+        await discover_publicsurplus(ctx)
+        await asyncio.sleep(DISCOVER_EVERY)
+
+
+
 if __name__ == '__main__':
     try:
         asyncio.run(main())
