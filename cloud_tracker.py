@@ -592,6 +592,13 @@ async def scrape_site(ctx, cfg):
     print(f"discover {cfg['site']}: {len(found)} on site, {new} new", flush=True)
 
 
+# Auction.com shows at most 500 properties per search, so also read it sorted by value (high->low and low->high)
+for _c in SCRAPE:
+    if _c['site'] == 'Auction.com':
+        _c['urls'] += ['https://www.auction.com/residential/tx/active_lt/valuation_estimate%20desc_st',
+                       'https://www.auction.com/residential/tx/active_lt/valuation_estimate%20asc_st']
+
+
 if __name__ == '__main__':
     try:
         asyncio.run(main())
