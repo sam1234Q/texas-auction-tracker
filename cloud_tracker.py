@@ -543,6 +543,55 @@ async def main():
             await ctx.close()
 
 
+# ---- v2 scrape_site (overrides the one above): list pages that scroll inside a box (Auction.com) are scrolled fully
+COLLECT_JS = """async () => {
+  const seen = new Set();
+  const grab = () => document.querySelectorAll('a[href]').forEach(a => seen.add(a.href));
+  const scrollers = () => [document.scrollingElement, ...document.querySelectorAll('div,main,section,ul')].filter(
+    e => e && e.scrollHeight > e.clientHeight + 200 && (e === document.scrollingElement || /auto|scroll/.test(getComputedStyle(e).overflowY)));
+  let stall = 0, steps = 0;
+  while (stall < 8 && steps < 500) {
+    grab(); const b = seen.size;
+    for (const e of scrollers()) e.scrollBy(0, 450);
+    await new Promise(r => setTimeout(r, 600));
+    grab(); stall = seen.size === b ? stall + 1 : 0; steps++;
+  }
+  return [...seen];
+}"""
+
+
+async def scrape_site(ctx, cfg):
+    found = {}
+    page = await ctx.new_page()
+    try:
+        for url in cfg['urls']:
+            await page.goto(url, wait_until='domcontentloaded', timeout=60000)
+            for pg in range(cfg.get('max_pages', 30)):
+                await page.wait_for_timeout(4000)
+                hrefs = await page.evaluate(COLLECT_JS)
+                before = len(found)
+                for h in hrefs:
+                    m = re.search(cfg['rx'], h, re.I)
+                    if m:
+                        found[m.group(cfg['gid'])] = h.split('#')[0]
+                nxt = await page.query_selector(NEXT_SEL)
+                if not nxt or (pg > 0 and len(found) == before):
+                    break
+                try:
+                    await nxt.click(timeout=8000)
+                except Exception:
+                    break
+    except Exception as e:
+        print(f"discover {cfg['site']} error {type(e).__name__}: {str(e)[:80]}", flush=True)
+    finally:
+        await page.close()
+    new = 0
+    for key, href in found.items():
+        if f"{cfg['site']}|{key}" not in KNOWN:
+            add_listing(cfg['site'], key, href); new += 1
+    print(f"discover {cfg['site']}: {len(found)} on site, {new} new", flush=True)
+
+
 if __name__ == '__main__':
     try:
         asyncio.run(main())
