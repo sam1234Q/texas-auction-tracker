@@ -1148,6 +1148,53 @@ async def discover_loop(ctx):
 
 
 
+# ---- v4.1: HUD list is lazy-loaded (177 cards) - scroll in small steps until every card is loaded
+async def discover_hud(ctx):
+    page = await ctx.new_page()
+    found = {}
+    try:
+        await page.goto('https://www.hudhomestore.gov/searchresult?citystate=TX', wait_until='domcontentloaded', timeout=60000)
+        await page.wait_for_timeout(6000)
+        txt = await page.evaluate("() => document.body.innerText")
+        mt = re.search(r'(\d+)\s+Properties Listed', txt)
+        target = int(mt.group(1)) if mt else 0
+        last, still = -1, 0
+        for _ in range(400):
+            await page.evaluate("() => window.scrollBy(0, 500)")
+            await page.wait_for_timeout(600)
+            txt = await page.evaluate("() => document.body.innerText")
+            n = len(re.findall(r'Case #:', txt))
+            if target and n >= target:
+                break
+            if n == last:
+                still += 1
+                if still >= 12:
+                    break
+            else:
+                still = 0
+            last = n
+        txt = await page.evaluate("() => document.body.innerText")
+        for ch in re.split(r'(?=\$[\d,]+\s*\n)', txt):
+            m = HUD_BLOCK.match(ch)
+            c = re.search(r'Case #:\s*([\d-]+)', ch)
+            if not (m and c):
+                continue
+            d = re.search(r'BIDS OPEN\s*(\d{2}/\d{2}/\d{4})', ch)
+            found[c.group(1)] = (m.group(2), m.group(3), m.group(4), float(m.group(1).replace(',', '')), d.group(1) if d else None)
+    except Exception as e:
+        print(f'discover HUD error {type(e).__name__}: {str(e)[:80]}', flush=True)
+    finally:
+        await page.close()
+    new = 0
+    for case, (street, city, zp, price, d) in found.items():
+        if f'HUD|{case}' not in KNOWN:
+            add_static('HUD', case, 'https://www.hudhomestore.gov/searchresult?citystate=TX', address=f'{street}, {city}, TX {zp}', city=city, zip_=zp, date=d, start_price=price)
+            new += 1
+    if len(found) >= 50:
+        mark_gone('HUD', {f'HUD|{c}' for c in found})
+    print(f'discover HUD: {len(found)} TX on site (page says {target}), {new} new', flush=True)
+
+
 if __name__ == '__main__':
     try:
         asyncio.run(main())
