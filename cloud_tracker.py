@@ -656,6 +656,45 @@ async def discover_loop(ctx):
 
 
 
+# Public Surplus v2: read the page text instead of link structure
+PS_JS = "() => document.body.innerText"
+PS_ROW = re.compile(r"(?m)^([A-Z]{2})\s*\n\s*#(\d+)\s*-\s*([^\n]*)")
+
+
+async def discover_publicsurplus(ctx):
+    found = {}
+    page = await ctx.new_page()
+    try:
+        await page.goto('https://www.publicsurplus.com/sms/browse/cataucs?catid=15', wait_until='domcontentloaded', timeout=60000)
+        for pg in range(40):
+            await page.wait_for_timeout(3000)
+            before = len(found)
+            txt = await page.evaluate(PS_JS)
+            rows = PS_ROW.findall(txt)
+            if pg == 0:
+                print(f'PublicSurplus page1: {len(txt)} chars, {len(rows)} rows, title={await page.title()!r}', flush=True)
+            for st, aid, title in rows:
+                if st == 'TX':
+                    found[aid] = title
+            nxt = page.locator('a:has-text("Next")').first
+            if await nxt.count() == 0 or (pg > 0 and len(found) == before and pg > 8):
+                break
+            try:
+                await nxt.click(timeout=8000)
+            except Exception:
+                break
+    except Exception as e:
+        print(f'discover PublicSurplus error {type(e).__name__}: {str(e)[:80]}', flush=True)
+    finally:
+        await page.close()
+    new = 0
+    for aid, title in found.items():
+        if f'PublicSurplus|{aid}' not in KNOWN:
+            add_listing('PublicSurplus', aid, f'https://www.publicsurplus.com/sms/auction/view?auc={aid}',
+                        address=(title or 'Public Surplus ' + aid) + ' TX'); new += 1
+    print(f'discover PublicSurplus: {len(found)} TX on site, {new} new', flush=True)
+
+
 if __name__ == '__main__':
     try:
         asyncio.run(main())
