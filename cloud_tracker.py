@@ -1195,6 +1195,46 @@ async def discover_hud(ctx):
     print(f'discover HUD: {len(found)} TX on site (page says {target}), {new} new', flush=True)
 
 
+# ---- v4.2: diagnostics for sites that return nothing from the cloud (prints title + what the page shows, once per run)
+_DIAG_DONE = set()
+
+
+async def _diag(ctx, name, url):
+    if name in _DIAG_DONE:
+        return
+    _DIAG_DONE.add(name)
+    page = await ctx.new_page()
+    try:
+        await page.goto(url, wait_until='domcontentloaded', timeout=60000)
+        await page.wait_for_timeout(8000)
+        title = await page.title()
+        body = (await page.evaluate("() => document.body ? document.body.innerText : ''")) or ''
+        anchors = await page.evaluate("() => document.querySelectorAll('a[href*=\"/asset/\"], a[href*=\"/Listing/\"]').length")
+        print(f'DIAG {name}: title={title[:60]!r} body_len={len(body)} anchors={anchors} text={body[:160]!r}', flush=True)
+    except Exception as e:
+        print(f'DIAG {name} error {type(e).__name__}: {str(e)[:100]}', flush=True)
+    finally:
+        await page.close()
+
+
+_orig_discover_govdeals = discover_govdeals
+
+
+async def discover_govdeals(ctx):
+    await _orig_discover_govdeals(ctx)
+    await _diag(ctx, 'GovDeals', GD_URL)
+
+
+_orig_loopnet_cards = loopnet_cards
+
+
+async def loopnet_cards(ctx):
+    out = await _orig_loopnet_cards(ctx)
+    if not out:
+        await _diag(ctx, 'LoopNet', 'https://www.loopnet.com/search/commercial-real-estate/usa/auctions/')
+    return out
+
+
 if __name__ == '__main__':
     try:
         asyncio.run(main())
