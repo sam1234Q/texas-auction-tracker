@@ -10030,3 +10030,7 @@ time,id,address,status,bid,seconds_left,reserve
 2026-11-07 07:56:46,Hubzu|94617698152,404 E Criner Grandview Tx 76050,LIVE(card),,,
 2026-11-07 07:58:53,Hubzu|501330659914,7704 N 5Th St Mc Allen Tx 78504,LIVE,,219665,
 2026-11-07 08:00:07,Hubzu|501330659914,7704 N 5Th St Mc Allen Tx 78504,LIVE(card),378000.0,,
+2026-11-07 08:19:19,Hubzu|94517742367,12210 Deer Trail Frisco Tx 75035,UNKNOWN,,,
+2026-11-07 08:19:19,Hubzu|94517653777,128 Gloria Boulevard Smithville Tx 78957,UNKNOWN,,,
+2026-11-07 08:19:49,Hubzu|94517653777,128 Gloria Boulevard Smithville Tx 78957,LIVE(card),,,
+2026-11-07 08:19:49,Hubzu|94517742367,12210 Deer Trail Frisco Tx 75035,LIVE(card),,,
