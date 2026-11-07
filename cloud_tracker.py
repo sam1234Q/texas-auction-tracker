@@ -695,6 +695,33 @@ async def discover_publicsurplus(ctx):
     print(f'discover PublicSurplus: {len(found)} TX on site, {new} new', flush=True)
 
 
+# Public Surplus v3: walk the list pages by URL
+async def discover_publicsurplus(ctx):
+    found = {}
+    page = await ctx.new_page()
+    try:
+        for pg in range(0, 20):
+            await page.goto(f'https://www.publicsurplus.com/sms/browse/cataucs?slth=y&catid=15&page={pg}&sortBy=timeLeft&sortDesc=N&showaucpct=',
+                            wait_until='domcontentloaded', timeout=60000)
+            await page.wait_for_timeout(2500)
+            rows = PS_ROW.findall(await page.evaluate(PS_JS))
+            for st, aid, title in rows:
+                if st == 'TX':
+                    found[aid] = title
+            if not rows:
+                break
+    except Exception as e:
+        print(f'discover PublicSurplus error {type(e).__name__}: {str(e)[:80]}', flush=True)
+    finally:
+        await page.close()
+    new = 0
+    for aid, title in found.items():
+        if f'PublicSurplus|{aid}' not in KNOWN:
+            add_listing('PublicSurplus', aid, f'https://www.publicsurplus.com/sms/auction/view?auc={aid}',
+                        address=(title or 'Public Surplus ' + aid) + ' TX'); new += 1
+    print(f'discover PublicSurplus: {len(found)} TX on site over {pg + 1} pages, {new} new', flush=True)
+
+
 if __name__ == '__main__':
     try:
         asyncio.run(main())
