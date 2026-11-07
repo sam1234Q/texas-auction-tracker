@@ -722,6 +722,432 @@ async def discover_publicsurplus(ctx):
     print(f'discover PublicSurplus: {len(found)} TX on site over {pg + 1} pages, {new} new', flush=True)
 
 
+# ================================================================ v4: more sites, minimum bids, fast new-property discovery
+DISCOVER_EVERY = int(os.environ.get('TRACKER_DISCOVER_SECONDS', '300'))     # look for NEW properties every ~5 min (after each pass)
+
+
+def add_static(site, key, url, address=None, city='', zip_='', date=None, start_price=None):
+    """sites with no live bids (list price / minimum bid only): saved with their price, never polled for bids"""
+    l = add_listing(site, key, url, address=address, city=city, zip_=zip_, date=date, start_price=start_price)
+    s = S.setdefault(l['id'], {})
+    s['next'] = None
+    if s.get('status') in (None, 'waiting') or str(s.get('status', '')).startswith('REMOVED'):
+        s['status'] = 'LISTED'
+        s.pop('final_at', None)
+    if start_price is not None:
+        l['start_price'] = start_price
+    return l
+
+
+def mark_gone(site, keys):
+    stamp = time.strftime('%Y-%m-%d %H:%M:%S')
+    for l in L:
+        if l['site'] == site and l['id'] not in keys:
+            s = S.setdefault(l['id'], {})
+            if s.get('status') == 'LISTED':
+                s['status'] = 'REMOVED (no longer listed)'; s['final_at'] = stamp
+
+
+# ---------------------------------------------------------------- LoopNet / Ten-X (bids are read from the list cards)
+LN_JS = """() => [...document.querySelectorAll('article')].map(a => {
+  const l = a.querySelector('a[href*="/Listing/"]');
+  return l ? [l.href.split('#')[0], a.innerText.replace(/\\s+/g, ' ')] : null;
+}).filter(Boolean)"""
+LN_TX = re.compile(r'/Listing/[^/]*-TX/(\d+)/?$', re.I)
+LN_ADDR = re.compile(r'(\d[^|]*?,\s*[A-Za-z .\']+,\s*TX\s*\d{5})')
+LN_BID = re.compile(r'(Current Bid|Starting bid)\s*\$?\s*([\d,]+)', re.I)
+
+
+def ln_parse(text):
+    m = LN_ADDR.search(text)
+    b = LN_BID.search(text)
+    cd = re.search(r'(\d+)d\s*:\s*(\d+)h\s*:\s*(\d+)m', text)
+    return dict(address=m.group(1).strip() if m else None,
+                bid_label=b.group(1) if b else None,
+                bid=float(b.group(2).replace(',', '')) if b else None,
+                countdown=(int(cd[1]) * 86400 + int(cd[2]) * 3600 + int(cd[3]) * 60) if cd else None,
+                reserve=('Met' if 'Reserve Met' in text else 'Not met' if 'Reserve Not Met' in text else None))
+
+
+async def loopnet_cards(ctx):
+    out = {}
+    page = await ctx.new_page()
+    try:
+        for pg in range(1, 12):
+            url = 'https://www.loopnet.com/search/commercial-real-estate/usa/auctions/' + (f'{pg}/' if pg > 1 else '')
+            await page.goto(url, wait_until='domcontentloaded', timeout=60000)
+            await page.wait_for_timeout(4000)
+            cards = await page.evaluate(LN_JS)
+            if not cards:
+                break
+            for href, text in cards:
+                m = LN_TX.search(href)
+                if m:
+                    out[m.group(1)] = (href, ln_parse(text))
+    except Exception as e:
+        print(f'discover LoopNet error {type(e).__name__}: {str(e)[:80]}', flush=True)
+    finally:
+        await page.close()
+    return out
+
+
+async def loopnet_loop(ctx):
+    while True:
+        minleft = None
+        try:
+            found = await loopnet_cards(ctx)
+            stamp = dt.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            new = 0
+            for key, (href, info) in found.items():
+                lid = f'LoopNet|{key}'
+                if lid not in KNOWN:
+                    new += 1
+                l = add_listing('LoopNet', key, href, address=info['address'], start_price=info['bid'] if info['bid_label'] and info['bid_label'].lower().startswith('start') else None)
+                s = S.setdefault(lid, {})
+                s['next'] = None                      # driven by the cards, not by the detail page
+                if s.get('status') == 'FINAL':
+                    continue
+                s['absent'] = 0
+                if info['bid'] is not None and info['bid_label'] and info['bid_label'].lower().startswith('current'):
+                    s['last_bid'] = info['bid']; s['last_bid_at'] = stamp
+                if info['reserve']:
+                    s['reserve'] = info['reserve']
+                if info['countdown'] is not None:
+                    s['countdown'] = info['countdown']
+                    if info['countdown'] > 0:
+                        s['status'] = 'LIVE'
+                        minleft = info['countdown'] if minleft is None else min(minleft, info['countdown'])
+                elif not s.get('status') or s.get('status') == 'waiting':
+                    s['status'] = 'UPCOMING'
+            if found:
+                for l in L:
+                    if l['site'] == 'LoopNet' and l['id'].split('|')[1] not in found:
+                        s = S.setdefault(l['id'], {})
+                        if s.get('status') in ('FINAL',):
+                            continue
+                        s['absent'] = s.get('absent', 0) + 1
+                        if s['absent'] >= 3:          # gone from the list for 3 passes = ended
+                            s['status'] = 'FINAL'; s['final_ts'] = time.time(); s['final_bid'] = s.get('last_bid')
+                            s['final_at'] = stamp
+                            s['note'] = 'from last list-card bid' if s.get('last_bid') else 'ended, no bid seen (or reserve not met / no bids)'
+                        elif s['absent'] == 1:
+                            s['status'] = 'ENDED (verifying)'
+            print(f'discover LoopNet: {len(found)} TX on site, {new} new', flush=True)
+        except asyncio.CancelledError:
+            raise
+        except Exception as e:
+            print('loopnet loop error', type(e).__name__, str(e)[:80], flush=True)
+        await asyncio.sleep(60 if (minleft is not None and minleft < 14400) else 300)
+
+
+# ---------------------------------------------------------------- GovDeals (Texas real estate)
+import re
+GD_URL = 'https://www.govdeals.com/en/search?category=11&categoryName=Real%20Estate,%20Buildings,%20Structures'
+GD_JS = """() => {
+  const out = [];
+  for (const a of document.querySelectorAll('a[href*="/asset/"]')) {
+    const m = a.pathname.match(/\\/asset\\/(\\d+)\\/(\\d+)/);
+    if (!m) continue;
+    let el = a;
+    for (let i = 0; i < 8 && el && !/Texas|, USA/.test(el.innerText || ''); i++) el = el.parentElement;
+    out.push([m[1] + '-' + m[2], a.pathname, (el || a).innerText || '']);
+  }
+  return out;
+}"""
+
+
+async def discover_govdeals(ctx):
+    found = {}
+    page = await ctx.new_page()
+    try:
+        await page.goto(GD_URL, wait_until='domcontentloaded', timeout=60000)
+        for pg in range(60):
+            await page.wait_for_timeout(4000)
+            for key, path, txt in await page.evaluate(GD_JS):
+                if 'Texas, USA' in txt and key not in found:
+                    lines = [l.strip() for l in txt.split('\n') if l.strip()]
+                    title = next((l for l in lines if not re.match(r'(ONLINE AUCTION|New Listing|Watch|error|check_circle|Reserve)', l)), key)
+                    pm = re.search(r'(?:USD|\$)\s*([\d,]+(?:\.\d\d)?)', txt)
+                    loc = next((l for l in lines if 'Texas, USA' in l), 'Texas')
+                    found[key] = ('https://www.govdeals.com' + path, f'{title} - {loc}',
+                                  float(pm.group(1).replace(',', '')) if pm else None)
+            nxt = page.locator('a[aria-label*="Next Page"]').first
+            if await nxt.count() == 0:
+                break
+            try:
+                await nxt.click(timeout=8000)
+            except Exception:
+                break
+    except Exception as e:
+        print(f'discover GovDeals error {type(e).__name__}: {str(e)[:80]}', flush=True)
+    finally:
+        await page.close()
+    new = 0
+    for key, (url, addr, price) in found.items():
+        if f'GovDeals|{key}' not in KNOWN:
+            add_listing('GovDeals', key, url, address=addr, start_price=price); new += 1
+    print(f'discover GovDeals: {len(found)} on site, {new} new', flush=True)
+
+
+# ---------------------------------------------------------------- RealForeclose (Texas county tax-foreclosure sales)
+# 23 Texas counties run their tax-foreclosure sales on RealAuction's RealForeclose.  Everything is PUBLIC (no login):
+#   calendar : https://<county>.texas.sheriffsaleauctions.com/index.cfm?zaction=USER&zmethod=CALENDAR&selCalDate=MM/01/YYYY
+#              (Travis and Montgomery live on <county>.texas.realforeclose.com instead)
+#   one sale : .../index.cfm?zaction=AUCTION&Zmethod=PREVIEW&AUCTIONDATE=MM/DD/YYYY      (items load by AJAX, wait ~8 s)
+# A sale-day page holds three areas: Area_R (running), Area_W (waiting / not started), Area_C (closed, sold or canceled).
+# Every property is a  div.AUCTION_ITEM  (id AITEM_<n>), 10 per page per area; pager = input#curP<R|W|C>A, set value + Enter.
+# There is NO separate page per property, so these are written straight to taxsale_results.csv (one row per property,
+# overwritten as the status/amount changes) - not through add_listing()/look().
+TX_RF_COUNTIES = ['angelina', 'aransas', 'atascosa', 'caldwell', 'cameron', 'dallas', 'elpaso', 'ellis', 'galveston', 'gregg',
+                  'hopkins', 'jackson', 'kaufman', 'llano', 'matagorda', 'montgomery', 'nueces', 'orange', 'sanpatricio',
+                  'smith', 'travis', 'tyler', 'victoria', 'wilson']
+TX_RF_HOST = {'travis': 'travis.texas.realforeclose.com', 'montgomery': 'montgomery.texas.realforeclose.com'}
+TAXSALE_F = os.path.join(HERE, 'taxsale_results.csv')
+TAXSALE_COLS = ['key', 'site', 'county', 'sale_date', 'address', 'min_bid', 'adjudged_value', 'status', 'current_or_final_bid',
+                'sold_to', 'cause_no', 'account_no', 'sale_type', 'last_seen', 'url']
+
+RF_CAL_JS = """() => [...document.querySelectorAll('[class*="CALSEL"]')].map(e => [e.getAttribute('dayid'),
+                     e.innerText.replace(/\\s+/g, ' ').trim()])"""
+RF_ITEMS_JS = """() => [...document.querySelectorAll('.AUCTION_ITEM')].map(e => {
+    const f = {};
+    e.querySelectorAll('.AUCTION_DETAILS tr').forEach(r => {
+        const l = r.querySelector('.AD_LBL'), d = r.querySelector('.AD_DTA');
+        if (l) f[l.innerText.replace(/:\\s*$/, '').trim()] = d ? d.innerText.replace(/\\s+/g, ' ').trim() : '';
+    });
+    const st = e.querySelector('.AUCTION_STATS');
+    return {id: e.id, area: (e.closest('[id^=Area_]') || {}).id || '', stats: st ? st.innerText.replace(/\\s+/g, ' ').trim() : '',
+            fields: f, text: e.innerText.replace(/\\s+/g, ' ').trim()};
+}) """
+
+
+def _rf_money(s):
+    m = re.search(r'\$\s*([\d,]+(?:\.\d\d)?)', s or '')
+    return m.group(1).replace(',', '') if m else ''
+
+
+def _rf_row(county, host, sale_date, it):
+    f, st, text = it['fields'], it['stats'], it['text']
+    low = st.lower()
+    if it['area'].endswith('C') or 'sold' in low or 'cancel' in low:
+        status = 'CANCELED' if 'cancel' in low else ('ENDED-SOLD' if 'sold' in low else 'ENDED')
+    elif it['area'].endswith('R'):
+        status = 'LIVE'
+    else:
+        status = 'UPCOMING'
+    bid = ''
+    m = re.search(r'(?:Amount|Current Bid|Winning Bid|High Bid)\s*\$\s*([\d,]+(?:\.\d\d)?)', st, re.I)
+    if m:
+        bid = m.group(1).replace(',', '')
+    sold = ''
+    m = re.search(r'Sold To\s*(.*)$', st)
+    if m:
+        sold = m.group(1).strip()
+    aid = it['id'].replace('AITEM_', '')
+    return dict(key=f'RealForeclose|{host}|{aid}', site='RealForeclose', county=county, sale_date=sale_date,
+                address=f.get('Property Address', ''), min_bid=_rf_money(f.get('Est. Min. Bid') or f.get('Opening Bid') or f.get('Minimum Bid')),
+                adjudged_value=_rf_money(f.get('Adjudged Value')), status=status, current_or_final_bid=bid, sold_to=sold,
+                cause_no=f.get('Cause Number', ''), account_no=f.get('Account Number', ''), sale_type=f.get('Sale Type', ''),
+                last_seen=time.strftime('%Y-%m-%d %H:%M:%S'),
+                url=f'https://{host}/index.cfm?zaction=AUCTION&Zmethod=PREVIEW&AUCTIONDATE={sale_date}')
+
+
+def _taxsale_load():
+    rows = {}
+    if os.path.exists(TAXSALE_F):
+        try:
+            for r in csv.DictReader(open(TAXSALE_F, newline='', encoding='utf-8')):
+                rows[r['key']] = r
+        except Exception:
+            pass
+    return rows
+
+
+def _taxsale_save(rows):
+    tmp = TAXSALE_F + '.tmp'
+    with open(tmp, 'w', newline='', encoding='utf-8') as fh:
+        w = csv.DictWriter(fh, fieldnames=TAXSALE_COLS, extrasaction='ignore')
+        w.writeheader()
+        for r in rows.values():
+            w.writerow(r)
+    os.replace(tmp, TAXSALE_F)
+
+
+async def _rf_read_day(page, county, host, sale_date):
+    """all properties of one sale day (running + waiting + closed areas, every page)"""
+    got = {}
+    await page.goto(f'https://{host}/index.cfm?zaction=AUCTION&Zmethod=PREVIEW&AUCTIONDATE={sale_date}', wait_until='domcontentloaded', timeout=60000)
+    await page.wait_for_timeout(8000)
+    for area in 'RWC':
+        for pg in range(1, 40):
+            if pg > 1:
+                ok = await page.evaluate("""(a) => { const i = document.getElementById('curP' + a + 'A'); const mx = document.getElementById('max' + a + 'A');
+                       if (!i || !mx) return false; return true; }""", area)
+                if not ok:
+                    break
+                mx = await page.evaluate("(a) => parseInt(document.getElementById('max' + a + 'A').innerText) || 1", area)
+                if pg > mx:
+                    break
+                await page.evaluate("""([a, n]) => { const i = document.getElementById('curP' + a + 'A'); i.value = String(n);
+                       for (const t of ['keydown', 'keypress', 'keyup']) i.dispatchEvent(new KeyboardEvent(t, {key: 'Enter', keyCode: 13, which: 13, bubbles: true}));
+                       i.dispatchEvent(new Event('change', {bubbles: true})); }""", [area, pg])
+                await page.wait_for_timeout(3500)
+            for it in await page.evaluate(RF_ITEMS_JS):
+                if it['area'].endswith(area):
+                    r = _rf_row(county, host, sale_date, it)
+                    got[r['key']] = r
+            mx = await page.evaluate("(a) => { const m = document.getElementById('max' + a + 'A'); return m ? (parseInt(m.innerText) || 1) : 1; }", area)
+            if pg >= mx:
+                break
+    return got
+
+
+async def discover_taxsale(ctx, back_days=40, months_ahead=3):
+    """one pass over every Texas RealForeclose county.  Returns number of sale days that are LIVE today (so the caller can poll faster)."""
+    rows = _taxsale_load()
+    page = await ctx.new_page()
+    total = new = live_today = 0
+    today = dt.date.today()
+    try:
+        for county in TX_RF_COUNTIES:
+            host = TX_RF_HOST.get(county, f'{county}.texas.sheriffsaleauctions.com')
+            days = {}
+            try:
+                for k in range(-1, months_ahead + 1):
+                    y, m = divmod(today.month - 1 + k, 12)
+                    first = dt.date(today.year + y, m + 1, 1)
+                    await page.goto(f'https://{host}/index.cfm?zaction=USER&zmethod=CALENDAR&selCalDate={first.strftime("%m/%d/%Y")}',
+                                    wait_until='domcontentloaded', timeout=45000)
+                    await page.wait_for_timeout(2500)
+                    for dayid, txt in await page.evaluate(RF_CAL_JS):
+                        if dayid:
+                            days[dayid] = txt
+                for dayid in sorted(days, key=lambda s: (s[6:], s[:2], s[3:5])):
+                    d = dt.datetime.strptime(dayid, '%m/%d/%Y').date()
+                    if (today - d).days > back_days:
+                        continue
+                    got = await _rf_read_day(page, county, host, dayid)
+                    if d == today:
+                        live_today += 1
+                    for key, r in got.items():
+                        total += 1
+                        if key not in rows:
+                            new += 1
+                        rows[key] = r
+            except Exception as e:
+                print(f'discover RealForeclose {county} error {type(e).__name__}: {str(e)[:80]}', flush=True)
+    finally:
+        await page.close()
+    _taxsale_save(rows)
+    print(f'discover RealForeclose(TX tax sales): {total} on site, {new} new, {live_today} sale-days today', flush=True)
+    return live_today
+
+
+async def taxsale_loop(ctx):
+    """slow pass normally (every 30 min); every 2 min on a day when a sale is on"""
+    while True:
+        try:
+            live = await discover_taxsale(ctx)
+        except Exception as e:
+            print(f'taxsale_loop error {type(e).__name__}: {str(e)[:80]}', flush=True)
+            live = 0
+        await asyncio.sleep(120 if live else 1800)
+
+
+
+# ---------------------------------------------------------------- HUD / HomePath (list price, no live bids)
+HUD_RE = re.compile(r"\$([\d,]+)\s*\n([^\n]+)\n([^\n]+, TX, \d{5})\n(?:.*?\n)*?.*?Case #:\s*([\d-]+)")
+HUD_BLOCK = re.compile(r"\$([\d,]+)\s*\n([^\n]+)\n([^\n]+),\s*TX,\s*(\d{5})")
+
+
+async def discover_hud(ctx):
+    page = await ctx.new_page()
+    found = {}
+    try:
+        await page.goto('https://www.hudhomestore.gov/searchresult?citystate=TX',
+                        wait_until='domcontentloaded', timeout=60000)
+        await page.wait_for_timeout(5000)
+        last = -1
+        for _ in range(60):  # scroll until card count stops growing
+            await page.mouse.wheel(0, 6000)
+            await page.wait_for_timeout(1200)
+            txt = await page.evaluate("() => document.body.innerText")
+            n = len(re.findall(r"Case #:", txt))
+            if n == last:
+                break
+            last = n
+        txt = await page.evaluate("() => document.body.innerText")
+        chunks = re.split(r"(?=\$[\d,]+\s*\n)", txt)
+        for ch in chunks:
+            m = HUD_BLOCK.match(ch)
+            c = re.search(r"Case #:\s*([\d-]+)", ch)
+            if not (m and c):
+                continue
+            d = re.search(r"BIDS OPEN\s*(\d{2}/\d{2}/\d{4})", ch)
+            found[c.group(1)] = (m.group(2), m.group(3), m.group(4),
+                                 float(m.group(1).replace(',', '')), d.group(1) if d else None)
+    except Exception as e:
+        print(f'discover HUD error {type(e).__name__}: {str(e)[:80]}', flush=True)
+    finally:
+        await page.close()
+    new = 0
+    for case, (street, city, zp, price, d) in found.items():
+        if f'HUD|{case}' not in KNOWN:
+            add_static('HUD', case, 'https://www.hudhomestore.gov/searchresult?citystate=TX',
+                        address=f'{street}, {city}, TX {zp}', city=city, zip_=zp, date=d, start_price=price)
+            new += 1
+    if len(found) >= 50:
+        mark_gone('HUD', {f'HUD|{c}' for c in found})
+    print(f'discover HUD: {len(found)} TX on site, {new} new', flush=True)
+
+
+async def discover_homepath(ctx):
+    page = await ctx.new_page()
+    props = []
+    try:
+        await page.goto('https://homepath.fanniemae.com/property-finder', wait_until='domcontentloaded', timeout=60000)
+        await page.wait_for_timeout(4000)
+        props = await page.evaluate(
+            "async () => (await (await fetch('/cfl/property-inventory/search')).json()).properties || []")
+    except Exception as e:
+        print(f'discover HomePath error {type(e).__name__}: {str(e)[:80]}', flush=True)
+    finally:
+        await page.close()
+    new = 0
+    tx = [p for p in props if p.get('state') == 'TX']
+    for p in tx:
+        key = p['propertyUuid']
+        if f'HomePath|{key}' not in KNOWN:
+            add_static('HomePath', key, f'https://homepath.fanniemae.com/property-finder',
+                        address=f"{p['addressLine1']}, {p['city']}, TX {p['zipCode']}",
+                        city=p['city'], zip_=p['zipCode'], date=p.get('listingStartDate'),
+                        start_price=p.get('price'))
+            new += 1
+    print(f'discover HomePath: {len(tx)} TX of {len(props)} (API ignores state filter; partial), {new} new', flush=True)
+
+# ---------------------------------------------------------------- one discovery loop for every site
+_BG = {}
+
+
+async def discover_loop(ctx):
+    if not _BG:
+        _BG['loopnet'] = asyncio.create_task(loopnet_loop(ctx))
+        _BG['taxsale'] = asyncio.create_task(taxsale_loop(ctx))
+    while True:
+        for cfg in SCRAPE:
+            await scrape_site(ctx, cfg)
+        for fn in (discover_servicelink, discover_publicsurplus, discover_govdeals, discover_hud, discover_homepath):
+            try:
+                await fn(ctx)
+            except asyncio.CancelledError:
+                raise
+            except Exception as e:
+                print(f'discover {fn.__name__} error {type(e).__name__}: {str(e)[:80]}', flush=True)
+        await asyncio.sleep(DISCOVER_EVERY)
+
+
+
+
+
 if __name__ == '__main__':
     try:
         asyncio.run(main())
