@@ -29577,3 +29577,27 @@ time,id,address,status,bid,seconds_left,reserve
 2026-11-08 20:21:08,ServiceLink|601-w-watson-st-jefferson-75657-tx-united-states-cwt,601 W Watson St,LIVE,36000.0,,Not met
 2026-11-08 20:21:11,ServiceLink|95-county-road-4130-hermleigh-79526-tx-united-states-cwt,95 County Road 4130,LIVE,37000.0,,Not met
 2026-11-08 20:21:14,ServiceLink|1413-zeneta-ave-odessa-79763-tx-united-states-cwt,1413 Zeneta Ave,LIVE,95000.0,,Not met
+2026-11-08 20:21:17,ServiceLink|107-louise-ln-athens-75751-tx-united-states-cwt,107 Louise Ln,LIVE,96000.0,,Not met
+2026-11-08 20:21:17,ServiceLink|114-ponderosa-dr-sweetwater-79556-tx-united-states-cwt,114 Ponderosa Dr,LIVE,35000.0,,Not met
+2026-11-08 20:21:23,ServiceLink|214-county-road-4632-fred-77616-tx-united-states-cwt,214 County Road 4632,LIVE,147000.0,,Not met
+2026-11-08 20:21:26,ServiceLink|1825-bay-landing-dr-portland-78374-tx-united-states-cwt,1825 Bay Landing Dr,LIVE,158000.0,,Not met
+2026-11-08 20:21:29,ServiceLink|14001-w-county-road-178-odessa-79766-tx-united-states-cwt,14001 W County Road 178,LIVE,97000.0,,Not met
+2026-11-08 20:21:32,ServiceLink|1846-indigo-ln-heartland-75126-tx-united-states-cwt,1846 Indigo Ln,LIVE,103000.0,,Not met
+2026-11-08 20:21:35,ServiceLink|13917-w-county-road-178-odessa-79766-tx-united-states-cwt,13917 W County Road 178,LIVE,120000.0,,Not met
+2026-11-08 20:21:35,ServiceLink|1911-w-ada-dr-orange-77632-tx-united-states-cwt,1911 W Ada Dr,LIVE,98000.0,,Not met
+2026-11-08 20:21:41,ServiceLink|1213-arapahoe-midland-79705-tx-united-states-cwt,1213 Arapahoe,LIVE,64000.0,,Not met
+2026-11-08 20:21:41,ServiceLink|708-27th-st-snyder-79549-tx-united-states-cwt,708 27Th St,LIVE,46000.0,,Not met
+2026-11-08 20:21:44,ServiceLink|305-imperial-new-deal-79350-tx-united-states-cwt,305 Imperial,LIVE,30000.0,,Not met
+2026-11-08 20:21:47,ServiceLink|502-n-7th-st-copperas-cove-76522-tx-united-states-cwt,502 N 7Th St,LIVE,39000.0,,Not met
+2026-11-08 20:21:50,ServiceLink|2014-jerry-st-denison-75020-tx-united-states-cwt,2014 Jerry St,LIVE,92000.0,,Not met
+2026-11-08 20:21:50,ServiceLink|5708-kentucky-st-joshua-76058-tx-united-states-cwt,5708 Kentucky St,LIVE,63000.0,,Not met
+2026-11-08 20:21:56,ServiceLink|947-county-road-1131-cumby-75433-tx-united-states-cwt,947 County Road 1131,LIVE,54000.0,,Not met
+2026-11-08 20:21:59,ServiceLink|5312-belknap-dr-southmayd-76268-tx-united-states-cwt,5312 Belknap Dr,LIVE,68000.0,,Not met
+2026-11-08 20:22:35,Hubzu|501869292108,4415 Southton Way San Antonio Tx 78223,LIVE(card),176000.0,2248,
+2026-11-08 20:22:35,Hubzu|501407742191,226 Edge Ave San Antonio Tx 78223,LIVE(card),167000.0,2248,
+2026-11-08 20:22:41,Hubzu|501869292108,4415 Southton Way San Antonio Tx 78223,LIVE,,2235,
+2026-11-08 20:22:55,Hubzu|501407742191,226 Edge Ave San Antonio Tx 78223,LIVE,,2220,
+2026-11-08 20:23:07,Hubzu|501413660933,3715 Newton Bay San Antonio Tx 78223,LIVE(card),203000.0,2215,
+2026-11-08 20:23:07,Hubzu|501849128649,11338 Enclave Run San Antonio Tx 78213,LIVE(card),224000.0,2215,
+2026-11-08 20:23:07,Hubzu|501132215463,12906 Fort Belknap San Antonio Tx 78245,LIVE(card),399000.0,2215,
+2026-11-08 20:23:07,Hubzu|501801708877,1513 Thompson Rd Mission Tx 78573,LIVE(card),125000.0,2215,
