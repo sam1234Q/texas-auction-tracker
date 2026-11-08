@@ -26703,3 +26703,12 @@ time,id,address,status,bid,seconds_left,reserve
 2026-11-08 16:40:37,Hubzu|501413660933,3715 Newton Bay San Antonio Tx 78223,LIVE,,15560,
 2026-11-08 16:40:47,ServiceLink|12245-county-road-37495-cleveland-77327-tx-united-states-cwt,12245 County Road 37495,LIVE,76000.0,,Not met
 2026-11-08 16:41:50,Hubzu|501869292108,4415 Southton Way San Antonio Tx 78223,LIVE,,15487,
+2026-11-08 16:43:39,Hubzu|501801708877,1513 Thompson Rd Mission Tx 78573,LIVE,,15375,
+2026-11-08 16:44:10,Hubzu|501869292108,4415 Southton Way San Antonio Tx 78223,LIVE(card),176000.0,15352,
+2026-11-08 16:44:11,ServiceLink|854-e-14th-st-colorado-city-79512-tx-united-states-cwt,854 E 14th St,LIVE,43000.0,,Not met
+2026-11-08 16:44:14,Hubzu|501407742191,226 Edge Ave San Antonio Tx 78223,LIVE,,15343,
+2026-11-08 16:44:32,Hubzu|501413660933,3715 Newton Bay San Antonio Tx 78223,LIVE(card),203000.0,15330,
+2026-11-08 16:44:32,Hubzu|501849128649,11338 Enclave Run San Antonio Tx 78213,LIVE(card),224000.0,15330,
+2026-11-08 16:44:32,Hubzu|501801708877,1513 Thompson Rd Mission Tx 78573,LIVE(card),125000.0,15329,
+2026-11-08 16:44:57,Hubzu|501132215463,12906 Fort Belknap San Antonio Tx 78245,LIVE,,15300,
+2026-11-08 16:45:23,Hubzu|501849128649,11338 Enclave Run San Antonio Tx 78213,LIVE,,15273,
