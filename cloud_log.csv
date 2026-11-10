@@ -33088,3 +33088,13 @@ time,id,address,status,bid,seconds_left,reserve
 2026-11-10 22:34:00,ServiceLink|310--county-road-4231-mount-pleasant-75455-tx-united-states-cwt,310  County Road 4231,LIVE,,,
 2026-11-10 22:34:14,ServiceLink|2114-purple-plum-ln-houston-77062-tx-united-states-cwt,2114 Purple Plum Ln,LIVE,,,
 2026-11-10 22:34:17,ServiceLink|22-country-club-ct-pantego-76013-tx-united-states-cwt,22 Country Club Ct,LIVE,,,
+2026-11-10 22:34:49,Hubzu|501643839362,4919 Village Park Marion Tx 78124,LIVE,,152709,
+2026-11-10 22:34:53,Xome|424928562,100 Crestwood Drive Fort Worth Tx 76107 424928562,UPCOMING,,314700,Not met
+2026-11-10 22:35:30,Hubzu|94617831757,6305 Gay St Houston Tx 77022,LIVE,,,
+2026-11-10 22:35:58,Hubzu|94617860389,114 Mountain Spring Dr Boerne Tx 78006,LIVE,,,
+2026-11-10 22:36:09,ServiceLink|606-w-lane-huntsville-77340-tx-united-states-trd,606 W Lane,LIVE,222000.0,,Not met
+2026-11-10 22:36:17,Hubzu|94617858297,6032 Beall St Houston Tx 77091,LIVE,,,
+2026-11-10 22:36:10,Hubzu|94517742615,212 Fifth St Odem Tx 78370,LIVE,,18694,
+2026-11-10 22:36:31,Hubzu|94517742615,212 Fifth St Odem Tx 78370,LIVE(card),,18690,
+2026-11-10 22:36:31,Hubzu|94517834343,104 Westwood Ln Kerrville Tx 78028,LIVE(card),,20490,
+2026-11-10 22:36:42,Hubzu|501643839362,4919 Village Park Marion Tx 78124,LIVE(card),,,
