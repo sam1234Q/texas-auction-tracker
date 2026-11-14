@@ -1235,6 +1235,40 @@ async def loopnet_cards(ctx):
     return out
 
 
+# ---- v4.3: Auction.com sales (in-person courthouse sales that also take online bids) have no countdown timer.
+# Their page lists a sale date + start time instead, so use that as the countdown (status UPCOMING) until the sale starts.
+_orig_parse_page = parse_page
+AC_DATE_RE = re.compile(r'\nDate\s*\n\s*(?:[A-Za-z]+,\s*)?([A-Za-z]{3,9})\s+(\d{1,2}),\s*(\d{4})', re.I)
+AC_TIME_RE = re.compile(r'Auction Start Time\s*\n\s*(\d{1,2}):(\d\d)\s*([ap])m', re.I)
+
+def _central_now():
+    try:
+        from zoneinfo import ZoneInfo
+        return dt.datetime.now(ZoneInfo('America/Chicago'))
+    except Exception:
+        return dt.datetime.now(dt.timezone(dt.timedelta(hours=-6)))
+
+def parse_page(raw):
+    info = _orig_parse_page(raw)
+    try:
+        if info['countdown'] is None:
+            text = cut(raw)
+            md = AC_DATE_RE.search('\n' + text)
+            mt = AC_TIME_RE.search(text)
+            if md and mt:
+                when = dt.datetime.strptime(f"{md.group(1)[:3].title()} {md.group(2)} {md.group(3)}", '%b %d %Y')
+                hh = int(mt.group(1)) % 12 + (12 if mt.group(3).lower() == 'p' else 0)
+                now = _central_now()
+                when = when.replace(hour=hh, minute=int(mt.group(2)), tzinfo=now.tzinfo)
+                secs = int((when - now).total_seconds())
+                if secs > 0:
+                    info['status'] = 'UPCOMING'
+                    info['countdown'] = secs
+                    info['ended_words'] = 'sale scheduled'
+    except Exception:
+        pass
+    return info
+
 if __name__ == '__main__':
     try:
         asyncio.run(main())
