@@ -1269,6 +1269,20 @@ def parse_page(raw):
         pass
     return info
 
+# ---- v4.4: Auction.com sales wrongly marked FINAL ("ended, no bid") by the old 'cancelled/postponed' wording are re-opened,
+# so they are watched again with the sale-date reader above. Truly ended ones simply go back to FINAL after the re-check.
+_orig_load_all = load_all
+
+def load_all():
+    _orig_load_all()
+    n = 0
+    for l in L:
+        s = S.get(l['id'], {})
+        if l['site'] == 'Auction.com' and s.get('status') == 'FINAL' and not s.get('final_bid'):
+            s.update(status=None, next=time.time() + (n % 600), end_looks=0, final_ts=None, final_at=None, note='')
+            n += 1
+    print(f'reopened {n} Auction.com listings that were wrongly marked FINAL', flush=True)
+
 if __name__ == '__main__':
     try:
         asyncio.run(main())
