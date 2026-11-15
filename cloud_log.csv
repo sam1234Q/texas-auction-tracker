@@ -38074,3 +38074,7 @@ time,id,address,status,bid,seconds_left,reserve
 2026-11-15 03:32:04,Hubzu|501716206320,32516 El Preseno San Benito Tx 78586,LIVE,,322070,
 2026-11-15 03:33:59,Hubzu|94517811082,8233 Heartfield Lane Beaumont Tx 77706,LIVE,,517377,
 2026-11-15 03:34:45,Hubzu|94617831779,4520 Via James Jacob Dallas Tx 75211,LIVE,,,
+2026-11-15 03:35:29,Hubzu|501226485852,514 Los Palomos Weslaco Tx 78596,LIVE,,62667,
+2026-11-15 03:35:49,Hubzu|501226485852,514 Los Palomos Weslaco Tx 78596,LIVE(card),216000.0,62655,
+2026-11-15 03:36:16,Hubzu|94517811082,8233 Heartfield Lane Beaumont Tx 77706,LIVE(card),,,
+2026-11-15 03:36:24,Hubzu|501716206320,32516 El Preseno San Benito Tx 78586,LIVE(card),425000.0,,
