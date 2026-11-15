@@ -38963,3 +38963,8 @@ time,id,address,status,bid,seconds_left,reserve
 2026-11-15 05:05:08,Hubzu|94317675115,3302 Prestwick St Edinburg Tx 78542,LIVE,,,
 2026-11-15 05:05:58,Hubzu|91716822605,219 Middlebury Dr San Antonio Tx 78217,LIVE,,478437,
 2026-11-15 05:07:27,Hubzu|9321809020,6444 Magnolia St Katy Tx 77493,LIVE,,315076,
+2026-11-15 05:08:29,Hubzu|94617831137,16605 Dry Creek Blvd Prosper Tx 75078,LIVE,,,
+2026-11-15 05:09:44,Hubzu|91716822605,219 Middlebury Dr San Antonio Tx 78217,LIVE(card),,,
+2026-11-15 05:09:51,Hubzu|91717718884,4515 Azure Place San Antonio Tx 78223,LIVE(card),,,
+2026-11-15 05:10:13,Hubzu|94317675115,3302 Prestwick St Edinburg Tx 78542,LIVE(card),,,
+2026-11-15 05:10:20,Hubzu|94617831137,16605 Dry Creek Blvd Prosper Tx 75078,LIVE(card),,,
