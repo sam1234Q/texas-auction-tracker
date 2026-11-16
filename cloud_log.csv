@@ -31109,3 +31109,31 @@ time,id,address,status,bid,seconds_left,reserve
 2026-11-16 19:53:46,ServiceLink|1301-nw-11th-st-andrews-79714-tx-united-states-cwt,1301 NW 11th St,LIVE,125000.0,,Not met
 2026-11-16 19:53:48,ServiceLink|11214-sagepark-ln-houston-77089-tx-united-states-cwt,11214 Sagepark Ln,LIVE,150000.0,,Not met
 2026-11-16 19:53:51,ServiceLink|108-cara-ln-dumas-79029-tx-united-states-cwt,108 Cara Ln,LIVE,79000.0,,Not met
+2026-11-16 19:53:54,ServiceLink|3114-freeboard-dr-texas-city-77510-tx-united-states-cwt,3114 Freeboard Dr,LIVE,181000.0,,Not met
+2026-11-16 19:53:54,ServiceLink|15035-memorial-dr-splendora-77372-tx-united-states-cwt,15035 Memorial Dr,LIVE,136000.0,,Not met
+2026-11-16 19:53:56,ServiceLink|1310-e-fordyce-ave-kingsville-78363-tx-united-states-cwt,1310 E Fordyce Ave,LIVE,77000.0,,Not met
+2026-11-16 19:53:57,ServiceLink|243-goodhue-ave-san-antonio-78218-tx-united-states-cwt,243 Goodhue Ave,LIVE,97500.0,,Not met
+2026-11-16 19:53:58,ServiceLink|8418-los-robles-ave-alvin-77511-tx-united-states-cwt,8418 Los Robles Ave,LIVE,108000.0,,Not met
+2026-11-16 19:54:00,ServiceLink|1417-pin-oak-dr-bellville-77418-tx-united-states-cwt,1417 Pin Oak Dr,LIVE,118000.0,,Not met
+2026-11-16 19:54:00,Hubzu|501413660933,3715 Newton Bay San Antonio Tx 78223,LIVE,,3956,
+2026-11-16 19:54:05,ServiceLink|821-mulberry-lane-brazoria-77422-tx-united-states-cwt,821 Mulberry Lane,LIVE,110000.0,,Not met
+2026-11-16 19:54:06,ServiceLink|1328-s-kossuth-st-rockport-78382-tx-united-states-cwt,1328 S Kossuth St,LIVE,94000.0,,Not met
+2026-11-16 19:54:10,ServiceLink|4741-woodhaven-ln-haltom-city-76137-tx-united-states-cwt,4741 Woodhaven Ln,LIVE,241000.0,,Not met
+2026-11-16 19:54:11,ServiceLink|95-county-road-4130-hermleigh-79526-tx-united-states-cwt,95 County Road 4130,LIVE,57500.0,,Not met
+2026-11-16 19:54:13,ServiceLink|5218-longhorn-trl-garland-75043-tx-united-states-cwt,5218 Longhorn Trl,LIVE,151250.0,,Not met
+2026-11-16 19:54:03,Hubzu|94517718265,19138 County Rd 520A Brazoria Tx 77422,LIVE,,31842,
+2026-11-16 19:54:20,ServiceLink|7340-w-pile-ranch-rd-odessa-79765-tx-united-states-cwt,7340 W Pile Ranch Rd,LIVE,209000.0,,Not met
+2026-11-16 19:54:22,ServiceLink|1825-bay-landing-dr-portland-78374-tx-united-states-cwt,1825 Bay Landing Dr,LIVE,205000.0,,Not met
+2026-11-16 19:54:31,ServiceLink|16915-hatch-ct-crosby-77532-tx-united-states-cwt,16915 Hatch Ct,LIVE,132000.0,,Not met
+2026-11-16 19:54:32,ServiceLink|20257-highway-35-sweeny-77480-tx-united-states-cwt,20257 Highway 35,LIVE,175000.0,,Not met
+2026-11-16 19:54:34,ServiceLink|1811-manor-dr-baytown-77521-tx-united-states-cwt,1811 Manor Dr,LIVE,140000.0,,Not met
+2026-11-16 19:54:36,ServiceLink|114-private-road-3491-gonzales-78629-tx-united-states-cwt,114 Private Road 3491,LIVE,138000.0,,Not met
+2026-11-16 19:54:38,Hubzu|501849128649,11338 Enclave Run San Antonio Tx 78213,LIVE,,3920,
+2026-11-16 19:54:43,ServiceLink|9829-s-lovell-ave-odessa-79766-tx-united-states-cwt,9829 S Lovell Ave,LIVE,127000.0,,Not met
+2026-11-16 19:54:44,ServiceLink|5610-tyler-st-vidor-77662-tx-united-states-cwt,5610 Tyler St,LIVE,141000.0,,Not met
+2026-11-16 19:54:52,ServiceLink|1212-n-grant-dr-sherman-75092-tx-united-states-cwt,1212 N Grant Dr,LIVE,102000.0,,Not met
+2026-11-16 19:54:59,ServiceLink|3213-josephine-st-houston-77026-tx-united-states-cwt,3213 Josephine St,LIVE,129000.0,,Not met
+2026-11-16 19:55:08,ServiceLink|5703-saratoga-dr-midland-79707-tx-united-states-cwt,5703 Saratoga Dr,LIVE,177000.0,,Not met
+2026-11-16 19:55:09,ServiceLink|2209-pelican-dr-mansfield-76063-tx-united-states-cwt,2209 Pelican Dr,LIVE,326000.0,,Not met
+2026-11-16 19:55:11,ServiceLink|314-woodard-ln-azle-76020-tx-united-states-cwt,314 Woodard Ln,LIVE,142000.0,,Not met
+2026-11-16 19:55:19,Xome|422211176,209 4Th St Valley View Tx 76272 422211176,ENDED,,,Not met
