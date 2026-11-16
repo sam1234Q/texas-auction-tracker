@@ -30316,3 +30316,107 @@ time,id,address,status,bid,seconds_left,reserve
 2026-11-16 19:19:35,Hubzu|87917858237,2829 Cecil Dr Richland Hills Tx 76118,LIVE,,,
 2026-11-16 19:19:38,Hubzu|94317834215,5621 Salt Springs Dr Fort Worth Tx 76179,LIVE,,,
 2026-11-16 19:19:40,Xome|422386061,4304 Convent Ave Laredo Tx 78041 422386061,LIVE,75000.0,174000,Not met
+2026-11-16 19:19:47,Xome|422140945,8510 Bluebonnet St Highlands Tx 77562 422140945,LIVE,103500.0,310,Not met
+2026-11-16 19:19:52,ServiceLink|10765-state-highway-19-s-athens-75751-tx-united-states-cwt,10765 State Highway 19 S,LIVE,117000.0,,Not met
+2026-11-16 19:19:56,Hubzu|94617866034,718 Prattsford Lane Houston Tx 77090,LIVE,,,
+2026-11-16 19:20:01,Hubzu|94617720004,7511 Briar Run Ct Missouri City Tx 77489,LIVE,,,
+2026-11-16 19:20:02,Hubzu|91717806978,12911 Louberg Vly San Antonio Tx 78253,LIVE,,,
+2026-11-16 19:20:04,ServiceLink|205-rex-ave-hooks-75561-tx-united-states-cwt,205 Rex Ave,LIVE,116000.0,,Not met
+2026-11-16 19:19:52,Hubzu|94517718265,19138 County Rd 520A Brazoria Tx 77422,LIVE,,33894,
+2026-11-16 19:20:06,Hubzu|94617743194,16543 Inwood Cove Dr San Antonio Tx 78248,LIVE,,,
+2026-11-16 19:20:08,Hubzu|94317806401,120 County Road 3669B Splendora Tx 77372,LIVE,,,
+2026-11-16 19:20:10,ServiceLink|884-honeysuckle-st-bridge-city-77611-tx-united-states-cwt,884 Honeysuckle St,LIVE,59500.0,,Not met
+2026-11-16 19:20:13,Hubzu|87917811351,17323 Wigeon Way Dr Humble Tx 77396,LIVE,,,
+2026-11-16 19:20:14,Hubzu|94617832795,2303 Cedrick Cove Unit D Austin Tx 78748,LIVE,,,
+2026-11-16 19:20:14,Xome|424794444,3620 Sakowitz St Houston Tx 77026 424794444,LIVE,124000.0,283,Not met
+2026-11-16 19:20:17,ServiceLink|4940-park-st-beaumont-77705-tx-united-states-cwt,4940 Park St,LIVE,103000.0,,Not met
+2026-11-16 19:20:19,Hubzu|94617830909,2000 Bagby St Houston Tx 77002,LIVE,,,
+2026-11-16 19:20:22,Hubzu|501869292108,4415 Southton Way San Antonio Tx 78223,LIVE(card),176000.0,5980,
+2026-11-16 19:20:22,Hubzu|501407742191,226 Edge Ave San Antonio Tx 78223,LIVE(card),167000.0,5980,
+2026-11-16 19:20:22,Hubzu|89117811254,11487 Sabo Rd Houston Tx 77089,LIVE(card),,9940,
+2026-11-16 19:20:22,Hubzu|94517718265,19138 County Rd 520A Brazoria Tx 77422,LIVE(card),,33880,
+2026-11-16 19:20:24,ServiceLink|1117-county-road-805-cleburne-76031-tx-united-states-cwt,1117 County Road 805,LIVE,181000.0,,Not met
+2026-11-16 19:20:29,ServiceLink|3307-nebraska-ave-dallas-75216-tx-united-states-cwt,3307 Nebraska Ave,LIVE,123000.0,,Not met
+2026-11-16 19:20:33,Hubzu|89117783901,13031 Timber Ridge Drive Dayton Tx 77535,LIVE(card),,,
+2026-11-16 19:20:31,ServiceLink|2114-purple-plum-ln-houston-77062-tx-united-states-cwt,2114 Purple Plum Ln,LIVE,209000.0,,Not met
+2026-11-16 19:20:30,Hubzu|94617831137,16605 Dry Creek Blvd Prosper Tx 75078,LIVE,,,
+2026-11-16 19:20:30,Xome|424825113,321 E Mayfield Blvd San Antonio Tx 78214 424825113,LIVE,106500.0,266,Not met
+2026-11-16 19:20:32,Hubzu|94617858292,6024 Beall St Houston Tx 77091,LIVE,,,
+2026-11-16 19:20:37,Hubzu|94617858288,16807 Mission Ridge Ln Houston Tx 77073,LIVE,,,
+2026-11-16 19:20:40,Hubzu|501132215463,12906 Fort Belknap San Antonio Tx 78245,LIVE(card),399000.0,5962,
+2026-11-16 19:20:40,Hubzu|501801708877,1513 Thompson Rd Mission Tx 78573,LIVE(card),125000.0,5962,
+2026-11-16 19:20:40,Hubzu|501413660933,3715 Newton Bay San Antonio Tx 78223,LIVE(card),203000.0,5962,
+2026-11-16 19:20:40,Hubzu|501849128649,11338 Enclave Run San Antonio Tx 78213,LIVE(card),224000.0,5962,
+2026-11-16 19:20:39,ServiceLink|3190-cartwright-st-beaumont-77701-tx-united-states-cwt,3190 Cartwright St,LIVE,106000.0,,Not met
+2026-11-16 19:20:39,ServiceLink|118-frost-creek-ave-groesbeck-76642-tx-united-states-cwt,118 Frost Creek Ave,LIVE,112000.0,,Not met
+2026-11-16 19:20:42,ServiceLink|212-staples-dr-baytown-77523-tx-united-states-cwt,212 Staples Dr,LIVE,177000.0,,Not met
+2026-11-16 19:20:42,Hubzu|94617810146,3021 Blue Bonnet Blvd Houston Tx 77025,LIVE,,,
+2026-11-16 19:20:50,ServiceLink|117-oak-valley-dr-la-vernia-78121-tx-united-states-cwt,117 Oak Valley Dr,LIVE,105000.0,,Not met
+2026-11-16 19:20:49,Hubzu|94617807747,103 Hilltop Dr Trinidad Tx 75163,LIVE,,,
+2026-11-16 19:20:50,Hubzu|94617831345,321 Oakhurst Dr Seagoville Tx 75159,LIVE,,,
+2026-11-16 19:20:58,Hubzu|94617858288,16807 Mission Ridge Ln Houston Tx 77073,LIVE(card),,,
+2026-11-16 19:20:58,Hubzu|94617655484,1301 Mobile St Marshall Tx 75670,LIVE(card),,,
+2026-11-16 19:20:58,Hubzu|94617831345,321 Oakhurst Dr Seagoville Tx 75159,LIVE(card),,,
+2026-11-16 19:20:58,Hubzu|94617807747,103 Hilltop Dr Trinidad Tx 75163,LIVE(card),,,
+2026-11-16 19:20:58,Hubzu|94617743194,16543 Inwood Cove Dr San Antonio Tx 78248,LIVE(card),,,
+2026-11-16 19:20:58,Hubzu|94317811445,2422 Silver Oak Ave Mission Tx 78574,LIVE(card),,,
+2026-11-16 19:20:58,Hubzu|94317603290,5602 Chuckwagon Cir Killeen Tx 76542,LIVE(card),,,
+2026-11-16 19:20:58,Hubzu|94617866034,718 Prattsford Lane Houston Tx 77090,LIVE(card),,,
+2026-11-16 19:20:58,Hubzu|94317786253,2832 65Th St Lubbock Tx 79413,LIVE(card),,,
+2026-11-16 19:20:58,Hubzu|94317834217,14634 Monterey Cypress Dr Houston Tx 77068,LIVE(card),,,
+2026-11-16 19:20:58,Hubzu|94317811364,501 Butch Cassidy Dr Anna Tx 75409,LIVE(card),,,
+2026-11-16 19:20:54,Hubzu|94617861766,6030 Beall St Houston Tx 77091,LIVE,,,
+2026-11-16 19:20:57,ServiceLink|6715-strawberry-brook-ln-dickinson-77539-tx-united-states-cwt,6715 Strawberry Brook Ln,LIVE,136000.0,,Not met
+2026-11-16 19:20:57,ServiceLink|2828-spur-ave-odessa-79762-tx-united-states-cwt,2828 Spur Ave,LIVE,127000.0,,Not met
+2026-11-16 19:20:57,ServiceLink|630-tupelo-st-vidor-77662-tx-united-states-cwt,630 Tupelo St,LIVE,91000.0,,Not met
+2026-11-16 19:20:55,Hubzu|94617832796,3665 Tilden Trl New Braunfels Tx 78132,LIVE,,,
+2026-11-16 19:20:58,ServiceLink|707-n-pennsylvania-ave-big-lake-76932-tx-united-states-cwt,707 N Pennsylvania Ave,LIVE,70000.0,,Not met
+2026-11-16 19:21:04,Hubzu|94317748114,3505 36Th St Lubbock Tx 79413,LIVE(card),,,
+2026-11-16 19:21:04,Hubzu|94617698135,1645 County Road 460 Thorndale Tx 76577,LIVE(card),,,
+2026-11-16 19:21:04,Hubzu|94617861800,109 Lunar Dr Donna Tx 78537,LIVE(card),,,
+2026-11-16 19:21:04,Hubzu|94317750359,4903 Gingham Check Ct Katy Tx 77449,LIVE(card),,,
+2026-11-16 19:21:04,Hubzu|94317806401,120 County Road 3669B Splendora Tx 77372,LIVE(card),,,
+2026-11-16 19:21:04,Hubzu|94317675115,3302 Prestwick St Edinburg Tx 78542,LIVE(card),,,
+2026-11-16 19:21:04,Hubzu|94317654887,25154 Bells Canyon Dr Porter Tx 77365,LIVE(card),,,
+2026-11-16 19:21:04,Hubzu|87917811351,17323 Wigeon Way Dr Humble Tx 77396,LIVE(card),,,
+2026-11-16 19:21:04,Hubzu|94617858297,6032 Beall St Houston Tx 77091,LIVE(card),,,
+2026-11-16 19:21:04,Hubzu|94617858292,6024 Beall St Houston Tx 77091,LIVE(card),,,
+2026-11-16 19:21:04,Hubzu|94617832796,3665 Tilden Trl New Braunfels Tx 78132,LIVE(card),,,
+2026-11-16 19:21:01,Hubzu|94317725225,23318 Campwood Terrace Ln Katy Tx 77493,LIVE,,,
+2026-11-16 19:21:11,Hubzu|94617830909,2000 Bagby St Houston Tx 77002,LIVE(card),,,
+2026-11-16 19:21:11,Hubzu|94617674922,1615 Enfield Rd Austin Tx 78703,LIVE(card),,,
+2026-11-16 19:21:11,Hubzu|94617861766,6030 Beall St Houston Tx 77091,LIVE(card),,,
+2026-11-16 19:21:11,Hubzu|94617831757,6305 Gay St Houston Tx 77022,LIVE(card),,,
+2026-11-16 19:21:11,Hubzu|94617830921,7503 Maribeth Dr Dallas Tx 75252,LIVE(card),,,
+2026-11-16 19:21:11,Hubzu|94617810146,3021 Blue Bonnet Blvd Houston Tx 77025,LIVE(card),,,
+2026-11-16 19:21:11,Hubzu|94617784915,411 E Farish Ave Rosebud Tx 76570,LIVE(card),,,
+2026-11-16 19:21:11,Hubzu|94317834215,5621 Salt Springs Dr Fort Worth Tx 76179,LIVE(card),,,
+2026-11-16 19:21:11,Hubzu|87917858237,2829 Cecil Dr Richland Hills Tx 76118,LIVE(card),,,
+2026-11-16 19:21:11,ServiceLink|135-bush-dr-venus-76084-tx-united-states-cwt,135 Bush Dr,LIVE,177000.0,,Not met
+2026-11-16 19:21:10,Hubzu|501801708877,1513 Thompson Rd Mission Tx 78573,LIVE,,18992326,
+2026-11-16 19:21:10,Hubzu|501849128649,11338 Enclave Run San Antonio Tx 78213,LIVE,,5927,
+2026-11-16 19:21:11,Hubzu|94617832183,12639 Ashford Meadow Dr Houston Tx 77082,LIVE,,,
+2026-11-16 19:21:17,Hubzu|94617858280,6716 Savanna Canyon Drive Del Valle Tx 78617,LIVE(card),,,
+2026-11-16 19:21:17,Hubzu|94617698140,5980 N Hwy 37 Clarksville Tx 75426,LIVE(card),,,
+2026-11-16 19:21:17,Hubzu|94617832784,8539 Astral Pl San Antonio Tx 78252,LIVE(card),,,
+2026-11-16 19:21:17,Hubzu|94617807784,11518 Mossmorran Ln Richmond Tx 77407,LIVE(card),,,
+2026-11-16 19:21:17,Hubzu|94617832792,2303 Cedrick Cove Unit B Austin Tx 78748,LIVE(card),,,
+2026-11-16 19:21:18,Xome|422140945,8510 Bluebonnet St Highlands Tx 77562 422140945,LIVE,106500.0,519,Not met
+2026-11-16 19:21:21,Hubzu|94617832795,2303 Cedrick Cove Unit D Austin Tx 78748,LIVE(card),,,
+2026-11-16 19:21:21,Hubzu|94617807817,2303 Cedrick Cove Unit C Austin Tx 78748,LIVE(card),,,
+2026-11-16 19:21:21,Hubzu|94617807789,29111 Innes Park Pl Katy Tx 77494,LIVE(card),,,
+2026-11-16 19:21:21,Hubzu|91717806978,12911 Louberg Vly San Antonio Tx 78253,LIVE(card),,,
+2026-11-16 19:21:21,Hubzu|94617866100,1900 Harrier Lane Northlake Tx 76226,LIVE(card),,,
+2026-11-16 19:21:21,Hubzu|94617720004,7511 Briar Run Ct Missouri City Tx 77489,LIVE(card),,,
+2026-11-16 19:21:21,Hubzu|94617861781,4709 Scott Rd Pearland Tx 77581,LIVE(card),,,
+2026-11-16 19:21:21,Hubzu|94317812653,125 E Williamson Ave Harlingen Tx 78550,LIVE(card),,,
+2026-11-16 19:21:21,Hubzu|94617831137,16605 Dry Creek Blvd Prosper Tx 75078,LIVE(card),,,
+2026-11-16 19:21:02,Hubzu|94517742367,12210 Deer Trail Frisco Tx 75035,UNKNOWN,,,
+2026-11-16 19:21:05,Hubzu|94517653777,128 Gloria Boulevard Smithville Tx 78957,UNKNOWN,,,
+2026-11-16 19:21:27,ServiceLink|417-n-main-winters-79567-tx-united-states-cwt,417 N Main,LIVE,80000.0,,Not met
+2026-11-16 19:21:29,ServiceLink|17818-camelia-dr-beaumont-77705-tx-united-states-cwt,17818 Camelia Dr,LIVE,70000.0,,Not met
+2026-11-16 19:21:31,Hubzu|89117811254,11487 Sabo Rd Houston Tx 77089,LIVE,,9866,
+2026-11-16 19:21:41,ServiceLink|325-county-rd-893-angleton-77515-tx-united-states-cwt,325 County Rd 893,LIVE,194000.0,,Not met
+2026-11-16 19:21:41,ServiceLink|11311-w-26th-st-odessa-79763-tx-united-states-cwt,11311 W 26th St,LIVE,122000.0,,Not met
+2026-11-16 19:21:43,ServiceLink|1204-e-malloy-bridge-rd-seagoville-75159-tx-united-states-cwt,1204 E Malloy Bridge Rd,LIVE,117000.0,,Not met
+2026-11-16 19:21:42,Hubzu|501869292108,4415 Southton Way San Antonio Tx 78223,LIVE,,5894,
