@@ -32121,3 +32121,20 @@ time,id,address,status,bid,seconds_left,reserve
 2026-11-17 20:49:56,Auction.com|2247666,2202 Melanie Park Dr Spring Tx 2247666,LIVE,243300.0,132,Met
 2026-11-17 20:49:57,Auction.com|2247691,2606 Cobble Ridge Dr Sugar Land Tx 2247691,LIVE,130000.0,110,Not met
 2026-11-17 20:49:56,Auction.com|2247688,2335 Spring Hollow Dr Baytown Tx 2247688,LIVE,185000.0,80,Not met
+2026-11-17 20:50:06,Auction.com|2247709,3012 Laredo Dr Fort Worth Tx 2247709,LIVE,136400.0,161,Not met
+2026-11-17 20:50:08,Auction.com|2238949,13703 Dreamwood Dr San Antonio Tx 2238949,ENDED,,,
+2026-11-17 20:50:01,Hubzu|94517742367,12210 Deer Trail Frisco Tx 75035,UNKNOWN,,,
+2026-11-17 20:50:08,Hubzu|94517653777,128 Gloria Boulevard Smithville Tx 78957,UNKNOWN,,,
+2026-11-17 20:50:24,Hubzu|94617832183,12639 Ashford Meadow Dr Houston Tx 77082,LIVE,,,
+2026-11-17 20:51:09,Auction.com|2238942,4312 Bois D Arc St Greenville Tx 2238942,LIVE,90000.0,78,Not met
+2026-11-17 20:51:34,Hubzu|94517653777,128 Gloria Boulevard Smithville Tx 78957,LIVE(card),,,
+2026-11-17 20:51:34,Hubzu|94517742367,12210 Deer Trail Frisco Tx 75035,LIVE(card),,,
+2026-11-17 20:51:34,Hubzu|501330659914,7704 N 5Th St Mc Allen Tx 78504,LIVE(card),378000.0,509,
+2026-11-17 20:51:34,Hubzu|94517811143,2028 Brooke Drive Sanger Tx 76266,LIVE(card),,4109,
+2026-11-17 20:51:24,ServiceLink|107-louise-ln-athens-75751-tx-united-states-cwt,107 Louise Ln,ENDED,,,
+2026-11-17 20:51:47,Hubzu|501649684151,2007 Brookmont Conroe Tx 77301,LIVE(card),346000.0,495,
+2026-11-17 20:51:54,Hubzu|94317725225,23318 Campwood Terrace Ln Katy Tx 77493,LIVE(card),,,
+2026-11-17 20:51:42,ServiceLink|1825-bay-landing-dr-portland-78374-tx-united-states-cwt,1825 Bay Landing Dr,ENDED,,,
+2026-11-17 20:51:58,Hubzu|94617832796,3665 Tilden Trl New Braunfels Tx 78132,LIVE(card),,,
+2026-11-17 20:51:58,Hubzu|94617861766,6030 Beall St Houston Tx 77091,LIVE(card),,,
+2026-11-17 20:52:02,Hubzu|94617832183,12639 Ashford Meadow Dr Houston Tx 77082,LIVE(card),,,
