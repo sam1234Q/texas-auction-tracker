@@ -35633,3 +35633,8 @@ time,id,address,status,bid,seconds_left,reserve
 2026-11-19 14:33:47,Hubzu|94317602355,1405 Cedar Dr Gladewater Tx 75647,LIVE,,534357,
 2026-11-19 14:34:24,Hubzu|94517718263,16202 Marcelia Drive Houston Tx 77049,LIVE,,355712,
 2026-11-19 14:34:50,Hubzu|94317602536,52 Banyan Ct Lake Jackson Tx 77566,LIVE,,361505,
+2026-11-19 14:35:44,Auction.com|2240674,412 N Camp St Uvalde Tx 2240674,LIVE,87200.0,20640,Not met
+2026-11-19 14:37:01,Hubzu|94317602536,52 Banyan Ct Lake Jackson Tx 77566,LIVE(card),,,
+2026-11-19 14:37:07,Hubzu|94317602355,1405 Cedar Dr Gladewater Tx 75647,LIVE(card),,,
+2026-11-19 14:37:14,Hubzu|94517718263,16202 Marcelia Drive Houston Tx 77049,LIVE(card),,,
+2026-11-19 14:37:20,Hubzu|91717181683,4135 Griffing Dr Port Arthur Tx 77642,LIVE(card),,,
