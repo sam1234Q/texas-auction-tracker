@@ -37850,3 +37850,6 @@ time,id,address,status,bid,seconds_left,reserve
 2026-11-19 04:12:22,Hubzu|501649684151,2007 Brookmont Conroe Tx 77301,LIVE,,578842,
 2026-11-19 04:13:18,Hubzu|94317602355,1405 Cedar Dr Gladewater Tx 75647,LIVE,,571586,
 2026-11-19 04:14:04,Hubzu|94317656487,186 Caddell Ln New Braunfels Tx 78130,LIVE,,571553,
+2026-11-19 04:15:57,Hubzu|94317602355,1405 Cedar Dr Gladewater Tx 75647,LIVE(card),,,
+2026-11-19 04:15:57,Hubzu|94317656487,186 Caddell Ln New Braunfels Tx 78130,LIVE(card),,,
+2026-11-19 04:16:11,Hubzu|501649684151,2007 Brookmont Conroe Tx 77301,LIVE(card),,,
