@@ -31614,3 +31614,5 @@ time,id,address,status,bid,seconds_left,reserve
 2026-11-19 23:29:42,Hubzu|91717724825,13250 Wrangler St Corpus Christi Tx 78410,LIVE(card),,,
 2026-11-19 23:30:57,Hubzu|94517742339,701 North Owens Jefferson Tx 75657,LIVE,,13620,
 2026-11-19 23:32:32,Hubzu|94317580820,7966 Betty Boop St Houston Tx 77028,LIVE,,588445,
+2026-11-19 23:33:59,Hubzu|94317580820,7966 Betty Boop St Houston Tx 77028,LIVE(card),,,
+2026-11-19 23:33:59,Hubzu|94517742339,701 North Owens Jefferson Tx 75657,LIVE(card),60190.0,13444,
