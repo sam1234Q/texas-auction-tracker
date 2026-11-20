@@ -35333,3 +35333,7 @@ time,id,address,status,bid,seconds_left,reserve
 2026-11-20 02:25:12,Hubzu|94617830534,416 N Macarthur Blvd Irving Tx 75061,LIVE(card),,,
 2026-11-20 02:25:12,Hubzu|94617698283,6034 Mueller Rd La Grange Tx 78945,LIVE(card),,,
 2026-11-20 02:25:17,Hubzu|94517742339,701 North Owens Jefferson Tx 75657,LIVE,,3160,
+2026-11-20 02:28:32,Hubzu|9321812275,225 Shale Cir Buda Tx 78610,LIVE,,23887,
+2026-11-20 02:28:49,Hubzu|94517742383,6710 Greenwood Valley Pla Katy Tx 77493,LIVE(card),,6433,
+2026-11-20 02:28:49,Hubzu|9321812275,225 Shale Cir Buda Tx 78610,LIVE(card),265000.0,23874,
+2026-11-20 02:29:19,Hubzu|94517742339,701 North Owens Jefferson Tx 75657,LIVE(card),60190.0,2923,
