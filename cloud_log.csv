@@ -35343,3 +35343,7 @@ time,id,address,status,bid,seconds_left,reserve
 2026-11-20 02:34:38,Hubzu|91716822605,219 Middlebury Dr San Antonio Tx 78217,LIVE,,55506,
 2026-11-20 02:36:11,Hubzu|50168874643,720 N Padre Ave Weslaco Tx 78596,LIVE,,325426,
 2026-11-20 02:36:13,Hubzu|501226485852,514 Los Palomos Weslaco Tx 78596,LIVE,,325423,
+2026-11-20 02:38:21,Hubzu|50168874643,720 N Padre Ave Weslaco Tx 78596,LIVE(card),97000.0,,
+2026-11-20 02:38:21,Hubzu|501226485852,514 Los Palomos Weslaco Tx 78596,LIVE(card),206000.0,,
+2026-11-20 02:38:40,Hubzu|91716822605,219 Middlebury Dr San Antonio Tx 78217,LIVE(card),,55283,
+2026-11-20 02:39:44,Hubzu|91716978698,16210 Bantam Ridge Ct Houston Tx 77053,LIVE,,55212,
