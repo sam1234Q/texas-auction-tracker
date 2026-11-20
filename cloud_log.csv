@@ -33859,3 +33859,6 @@ time,id,address,status,bid,seconds_left,reserve
 2026-11-20 14:23:13,Hubzu|00017648178,15754 Deeside Spring Dr Humble Tx 77346,LIVE,,14864,
 2026-11-20 14:23:09,Hubzu|89117699914,2218 Joliet St Plainview Tx 79072,LIVE,,10475,
 2026-11-20 14:24:33,Hubzu|91717242331,1036 Laguna Cove Dr Katy Tx 77493,LIVE,,0,
+2026-11-20 14:25:42,Hubzu|89117699914,2218 Joliet St Plainview Tx 79072,LIVE(card),,10340,
+2026-11-20 14:25:42,Hubzu|00017648178,15754 Deeside Spring Dr Humble Tx 77346,LIVE(card),,14720,
+2026-11-20 14:25:55,Hubzu|91717242331,1036 Laguna Cove Dr Katy Tx 77493,LIVE(card),,,
