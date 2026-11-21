@@ -33575,3 +33575,8 @@ time,id,address,status,bid,seconds_left,reserve
 2026-11-21 01:29:34,Hubzu|91717806988,3109 Hoyle St Mc Kinney Tx 75071,LIVE,,318625,
 2026-11-21 01:29:35,Hubzu|501301851993,4011 Nettle Brook San Antonio Tx 78244,LIVE,,761424,
 2026-11-21 01:29:54,Hubzu|94517811082,8233 Heartfield Lane Beaumont Tx 77706,LIVE,,6425,
+2026-11-21 01:30:56,Hubzu|94517811082,8233 Heartfield Lane Beaumont Tx 77706,LIVE(card),,6366,
+2026-11-21 01:31:07,Hubzu|501301851993,4011 Nettle Brook San Antonio Tx 78244,LIVE(card),,,
+2026-11-21 01:31:07,Hubzu|91717806988,3109 Hoyle St Mc Kinney Tx 75071,LIVE(card),,,
+2026-11-21 01:31:15,Hubzu|50133483461,4641 Silver Lake Dallas Tx 75211,LIVE(card),,,
+2026-11-21 01:31:34,Hubzu|91716822605,219 Middlebury Dr San Antonio Tx 78217,LIVE,,577691,
