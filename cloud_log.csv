@@ -35546,3 +35546,14 @@ time,id,address,status,bid,seconds_left,reserve
 2026-11-22 20:01:03,ServiceLink|4816-tulip-ave-amarillo-79110-tx-united-states-cwt,4816 Tulip Ave,LIVE,96000.0,,Not met
 2026-11-22 20:01:02,ServiceLink|8285-san-bruno-st-beaumont-77708-tx-united-states-cwt,8285 San Bruno St,LIVE,52000.0,,Not met
 2026-11-22 20:01:02,ServiceLink|520-e-35th-st-lubbock-79404-tx-united-states-cwt,520 E 35th St,LIVE,23500.0,,Not met
+2026-11-22 20:01:12,Hubzu|501823932011,4940 Mile 10 Mercedes Tx 78570,LIVE(card),115000.0,,
+2026-11-22 20:01:02,Hubzu|94317656489,9807 Flatland Trl Converse Tx 78109,LIVE,,341923,
+2026-11-22 20:01:19,Hubzu|94317656489,9807 Flatland Trl Converse Tx 78109,LIVE(card),,,
+2026-11-22 20:01:19,Hubzu|94517601229,5814 Turquoise Hill Ln Richmond Tx 77469,LIVE(card),228200.0,,
+2026-11-22 20:01:23,Hubzu|91717090681,4907 Wigton Dr Houston Tx 77096,LIVE(card),,79119,
+2026-11-22 20:01:08,Hubzu|94117474138,509 N Waggoner St Electra Tx 76360,LIVE,,154717,
+2026-11-22 20:01:30,Hubzu|91717812301,15202 N Heron Hts Way Magnolia Tx 77354,LIVE(card),,,
+2026-11-22 20:01:33,Hubzu|501226485852,514 Los Palomos Weslaco Tx 78596,LIVE,,89904,
+2026-11-22 20:01:38,Hubzu|94317834935,12611 Querida Court Houston Tx 77045,LIVE(card),,,
+2026-11-22 20:01:44,Hubzu|501977909440,166 Private Rd 1387 Morgan Tx 76671,LIVE,,89893,
+2026-11-22 20:02:55,Hubzu|91717242331,1036 Laguna Cove Dr Katy Tx 77493,LIVE,,79023,
