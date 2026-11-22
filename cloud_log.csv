@@ -35529,3 +35529,20 @@ time,id,address,status,bid,seconds_left,reserve
 2026-11-22 19:58:08,Hubzu|94317835088,917 Burger St Abilene Tx 79603,LIVE(card),,,
 2026-11-22 19:58:12,Hubzu|94617830534,416 N Macarthur Blvd Irving Tx 75061,LIVE(card),,,
 2026-11-22 19:58:12,Hubzu|94617698283,6034 Mueller Rd La Grange Tx 78945,LIVE(card),,,
+2026-11-22 19:59:13,Hubzu|94517601229,5814 Turquoise Hill Ln Richmond Tx 77469,LIVE,,342045,
+2026-11-22 19:59:22,Hubzu|91717090681,4907 Wigton Dr Houston Tx 77096,LIVE,,79236,
+2026-11-22 19:59:40,Hubzu|501823932011,4940 Mile 10 Mercedes Tx 78570,LIVE,,90018,
+2026-11-22 19:59:48,Hubzu|91717812301,15202 N Heron Hts Way Magnolia Tx 77354,LIVE,,1465197,
+2026-11-22 20:00:54,ServiceLink|7419-lake-ivie-needville-77461-tx-united-states-cwt,7419 Lake Ivie,LIVE,173000.0,,Not met
+2026-11-22 20:00:55,ServiceLink|1127-crosspoint-st-hereford-79045-tx-united-states-cwt,1127 Crosspoint St,LIVE,75000.0,,Not met
+2026-11-22 20:00:55,ServiceLink|2116-laurel-st-bay-city-77414-tx-united-states-cwt,2116 Laurel St,LIVE,54000.0,,Not met
+2026-11-22 20:00:57,ServiceLink|1511-castlerock-dr-houston-77090-tx-united-states-cwt,1511 Castlerock Dr,LIVE,96000.0,,Not met
+2026-11-22 20:00:57,ServiceLink|13411-sea-island-dr-montgomery-77356-tx-united-states-cwt,13411 Sea Island Dr,LIVE,109000.0,,Not met
+2026-11-22 20:00:58,ServiceLink|1117-e-23rd-st-bryan-77803-tx-united-states-cwt,1117 E 23rd St,LIVE,83000.0,,Not met
+2026-11-22 20:00:59,ServiceLink|9141-johns-rd-alvarado-76009-tx-united-states-cwt,9141 Johns Rd,LIVE,79000.0,,Not met
+2026-11-22 20:01:00,ServiceLink|4507-lyons-ave-houston-77020-tx-united-states-cwt,4507 Lyons Ave,LIVE,70000.0,,Not met
+2026-11-22 20:01:00,ServiceLink|3722-woodchase-dr-unit---63-houston-77042-tx-united-states-cwt,3722 Woodchase Dr Unit # 63,LIVE,40000.0,,Not met
+2026-11-22 20:01:01,ServiceLink|9707-yuma-st-houston-77029-tx-united-states-cwt,9707 Yuma St,LIVE,65000.0,,Not met
+2026-11-22 20:01:03,ServiceLink|4816-tulip-ave-amarillo-79110-tx-united-states-cwt,4816 Tulip Ave,LIVE,96000.0,,Not met
+2026-11-22 20:01:02,ServiceLink|8285-san-bruno-st-beaumont-77708-tx-united-states-cwt,8285 San Bruno St,LIVE,52000.0,,Not met
+2026-11-22 20:01:02,ServiceLink|520-e-35th-st-lubbock-79404-tx-united-states-cwt,520 E 35th St,LIVE,23500.0,,Not met
