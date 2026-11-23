@@ -39187,3 +39187,24 @@ time,id,address,status,bid,seconds_left,reserve
 2026-11-23 16:34:40,ServiceLink|114-ponderosa-dr-sweetwater-79556-tx-united-states-cwt,114 Ponderosa Dr,LIVE,63000.0,,Not met
 2026-11-23 16:34:41,ServiceLink|11310-cora-ln-willis-77318-tx-united-states-cwt,11310 Cora Ln,LIVE,122000.0,,Not met
 2026-11-23 16:34:41,ServiceLink|1918-chestnut-dr-pampa-79065-tx-united-states-cwt,1918 Chestnut Dr,LIVE,71000.0,,Not met
+2026-11-23 16:35:00,Hubzu|89117783901,13031 Timber Ridge Drive Dayton Tx 77535,LIVE(card),,5102,
+2026-11-23 16:35:00,Hubzu|94517601100,20707 Greenpark Dr Lago Vista Tx 78645,LIVE(card),,37502,
+2026-11-23 16:35:17,Hubzu|91717090681,4907 Wigton Dr Houston Tx 77096,LIVE(card),,5085,
+2026-11-23 16:35:17,Hubzu|91717242331,1036 Laguna Cove Dr Katy Tx 77493,LIVE(card),,5085,
+2026-11-23 16:35:14,ServiceLink|14001-w-county-road-178-odessa-79766-tx-united-states-cwt,14001 W County Road 178,LIVE,117000.0,,Not met
+2026-11-23 16:35:18,Hubzu|501939920605,6942 Walnut Street Frisco Tx 75033,LIVE,,275079,
+2026-11-23 16:35:55,Hubzu|94617831123,13350 Orleans Houston Tx 77015,LIVE,,,
+2026-11-23 16:36:02,Hubzu|94617831779,4520 Via James Jacob Dallas Tx 75211,LIVE,,,
+2026-11-23 16:36:09,Hubzu|94517601089,5918 Avenue R Galveston Tx 77551,UNKNOWN,,,
+2026-11-23 16:36:18,ServiceLink|1811-manor-dr-baytown-77521-tx-united-states-cwt,1811 Manor Dr,LIVE,126000.0,,Not met
+2026-11-23 16:36:07,Auction.com|2216362,2019 N Sam Houston Ave Odessa Tx 2216362,UNKNOWN,,,
+2026-11-23 16:36:20,Auction.com|2257840,2608 Brushwood Mdw Leander Tx 2257840,LIVE,2500.0,,
+2026-11-23 16:36:21,Auction.com|2257841,6127 White River Dr Mcallen Tx 2257841,LIVE,2500.0,,
+2026-11-23 16:36:14,Hubzu|94517861170,13922 Blue Vista Dr Sugar Land Tx 77498,UNKNOWN,,,
+2026-11-23 16:36:30,ServiceLink|114-private-road-3491-gonzales-78629-tx-united-states-cwt,114 Private Road 3491,LIVE,138000.0,,Not met
+2026-11-23 16:36:23,Hubzu|94517653538,2840 Travis Ave Fort Worth Tx 76110,UNKNOWN,,,
+2026-11-23 16:36:35,Hubzu|94617810154,2303 Cedrick Cove Unit A Austin Tx 78748,LIVE,,,
+2026-11-23 16:36:39,Hubzu|94617858282,9926 Autumn Hollow Converse Tx 78109,LIVE,,,
+2026-11-23 16:36:39,Hubzu|91717861087,2108 Fresno San Antonio Tx 78201,LIVE,,,
+2026-11-23 16:36:44,Hubzu|94317726804,7028 Cir Cross Rd Odessa Tx 79765,LIVE,,,
+2026-11-23 16:36:50,Auction.com|2248400,1717 W Avenue I San Angelo Tx 2248400,LIVE,72000.0,13080,Not met
