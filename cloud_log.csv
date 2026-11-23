@@ -38374,3 +38374,10 @@ time,id,address,status,bid,seconds_left,reserve
 2026-11-23 15:34:05,Auction.com|2250274,5707 Mandalay Killeen Tx 2250274,LIVE,127480.0,10020,Met
 2026-11-23 15:34:13,Auction.com|2240731,1214 Woodward Damon Tx 2240731,LIVE,55000.0,17760,Not met
 2026-11-23 15:34:19,Auction.com|2211265,207 N Gowdy St Whitewright Tx 2211265,UNKNOWN,,,
+2026-11-23 15:35:41,Auction.com|2248962,1214 Woodward Damon Tx 2248962,LIVE,55000.0,17640,Not met
+2026-11-23 15:36:24,Hubzu|94517834343,104 Westwood Ln Kerrville Tx 78028,LIVE,,264680,
+2026-11-23 15:36:39,ServiceLink|10818-herbaceum-ct-richmond-77469-tx-united-states-cwt,10818 Herbaceum Ct,LIVE,129000.0,,Not met
+2026-11-23 15:37:09,Hubzu|94517742542,609 Green Apple Drive Garland Tx 75044,LIVE(card),,,
+2026-11-23 15:37:14,Hubzu|94517834343,104 Westwood Ln Kerrville Tx 78028,LIVE(card),,,
+2026-11-23 15:37:14,Hubzu|87917724480,5215 Fm 92 Silsbee Tx 77656,LIVE(card),,,
+2026-11-23 15:37:20,Hubzu|91717090681,4907 Wigton Dr Houston Tx 77096,LIVE(card),,8562,
