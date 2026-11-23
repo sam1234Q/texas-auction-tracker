@@ -39471,3 +39471,33 @@ time,id,address,status,bid,seconds_left,reserve
 2026-11-23 16:46:46,ServiceLink|854-e-14th-st-colorado-city-79512-tx-united-states-cwt,854 E 14th St,LIVE,65000.0,,Not met
 2026-11-23 16:46:51,Auction.com|2240009,6815 Cameron Texarkana Tx 2240009,LIVE,175000.0,4380,Not met
 2026-11-23 16:47:00,Auction.com|2241603,1909 Canyon Creek Dr Temple Tx 2241603,LIVE,89000.0,5100,Not met
+2026-11-23 16:47:16,Auction.com|2240198,908 W Paschal St Troup Tx 2240198,LIVE,70000.0,4680,Not met
+2026-11-23 16:47:18,Auction.com|2240298,2300 Timberleaf Cir Ingleside Tx 2240298,LIVE,100000.0,4980,Not met
+2026-11-23 16:47:24,Auction.com|2211131,1065 Abbie Ln Glen Rose Tx 2211131,LIVE,105000.0,4320,Not met
+2026-11-23 16:47:27,Auction.com|2246801,6815 Cameron Texarkana Tx 2246801,LIVE,175000.0,4320,Not met
+2026-11-23 16:47:31,Auction.com|2246976,908 W Paschal St Troup Tx 2246976,LIVE,70000.0,4680,Not met
+2026-11-23 16:47:35,ServiceLink|1127-crosspoint-st-hereford-79045-tx-united-states-cwt,1127 Crosspoint St,LIVE,95000.0,,Not met
+2026-11-23 16:47:36,ServiceLink|2116-laurel-st-bay-city-77414-tx-united-states-cwt,2116 Laurel St,LIVE,69000.0,,Not met
+2026-11-23 16:47:37,ServiceLink|1511-castlerock-dr-houston-77090-tx-united-states-cwt,1511 Castlerock Dr,LIVE,116000.0,,Not met
+2026-11-23 16:47:38,ServiceLink|13411-sea-island-dr-montgomery-77356-tx-united-states-cwt,13411 Sea Island Dr,LIVE,144500.0,,Not met
+2026-11-23 16:47:39,ServiceLink|1117-e-23rd-st-bryan-77803-tx-united-states-cwt,1117 E 23rd St,LIVE,103000.0,,Not met
+2026-11-23 16:47:40,ServiceLink|4507-lyons-ave-houston-77020-tx-united-states-cwt,4507 Lyons Ave,LIVE,90000.0,,Not met
+2026-11-23 16:47:40,ServiceLink|9141-johns-rd-alvarado-76009-tx-united-states-cwt,9141 Johns Rd,LIVE,99000.0,,Not met
+2026-11-23 16:47:41,ServiceLink|3722-woodchase-dr-unit---63-houston-77042-tx-united-states-cwt,3722 Woodchase Dr Unit # 63,LIVE,55000.0,,Not met
+2026-11-23 16:47:42,ServiceLink|9707-yuma-st-houston-77029-tx-united-states-cwt,9707 Yuma St,LIVE,85000.0,,Not met
+2026-11-23 16:47:46,ServiceLink|4816-tulip-ave-amarillo-79110-tx-united-states-cwt,4816 Tulip Ave,LIVE,116000.0,,Not met
+2026-11-23 16:47:45,ServiceLink|8285-san-bruno-st-beaumont-77708-tx-united-states-cwt,8285 San Bruno St,LIVE,67000.0,,Not met
+2026-11-23 16:47:44,Auction.com|2247068,1909 Canyon Creek Dr Temple Tx 2247068,LIVE,89000.0,5100,Not met
+2026-11-23 16:47:44,ServiceLink|520-e-35th-st-lubbock-79404-tx-united-states-cwt,520 E 35th St,LIVE,33500.0,,Not met
+2026-11-23 16:47:49,Auction.com|2247079,2300 Timberleaf Cir Ingleside Tx 2247079,LIVE,100000.0,4980,Not met
+2026-11-23 16:47:47,Auction.com|2211142,1002 Montclair Dr Garland Tx 2211142,UNKNOWN,,,
+2026-11-23 16:48:02,Auction.com|2247083,782 Ray Rd Wichita Falls Tx 2247083,UNKNOWN,,,
+2026-11-23 16:48:19,Hubzu|91716528602,4170 Wildacres Dr Houston Tx 77072,LIVE,,699,
+2026-11-23 16:48:34,Auction.com|2255371,908 W Paschal St Troup Tx 2255371,LIVE,70000.0,4620,Not met
+2026-11-23 16:48:37,Hubzu|94317602536,52 Banyan Ct Lake Jackson Tx 77566,LIVE,,7880,
+2026-11-23 16:48:39,Auction.com|2255395,1065 Abbie Ln Glen Rose Tx 2255395,LIVE,105000.0,4260,Not met
+2026-11-23 16:48:32,Auction.com|2255356,1615 Railroad Ave San Leon Tx 2255356,UNKNOWN,,,
+2026-11-23 16:48:51,Hubzu|91716896042,22169 Martin Rd Montgomery Tx 77316,LIVE(card),,670,
+2026-11-23 16:48:51,Hubzu|94317602536,52 Banyan Ct Lake Jackson Tx 77566,LIVE(card),,7870,
+2026-11-23 16:48:47,Auction.com|2255414,6815 Cameron Texarkana Tx 2255414,LIVE,175000.0,4260,Not met
+2026-11-23 16:48:49,Auction.com|2255439,2300 Timberleaf Cir Ingleside Tx 2255439,LIVE,100000.0,4920,Not met
