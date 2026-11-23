@@ -38849,3 +38849,7 @@ time,id,address,status,bid,seconds_left,reserve
 2026-11-23 16:07:02,Auction.com|2257752,10802 Grand Teton Dr Corpus Christi Tx 2257752,UPCOMING,2500.0,417600,
 2026-11-23 16:07:03,Auction.com|2257786,706 Sierra Ave Mansfield Tx 2257786,UPCOMING,2500.0,417600,
 2026-11-23 16:07:06,Auction.com|2207798,4919 Mountain Cypress Trl Spring Tx 2207798,UNKNOWN,,,
+2026-11-23 16:08:06,Auction.com|2255805,103 Stevens St Dayton Tx 2255805,LIVE,28100.0,13980,Not met
+2026-11-23 16:08:12,Hubzu|501503429584,1923 S Border Ave Weslaco Tx 78596,LIVE(card),164000.0,17510,
+2026-11-23 16:08:25,Hubzu|501801303551,106 County Road 2672 Devine Tx 78016,LIVE(card),114000.0,17496,
+2026-11-23 16:09:07,Hubzu|90017535951,5928 Hidden Peak St San Antonio Tx 78247,LIVE,,111036,
