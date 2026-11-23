@@ -39506,3 +39506,16 @@ time,id,address,status,bid,seconds_left,reserve
 2026-11-23 16:49:46,Auction.com|2255573,1909 Canyon Creek Dr Temple Tx 2255573,LIVE,89000.0,4980,Not met
 2026-11-23 16:49:42,Hubzu|94317580819,8055 Chestnut Barr Dr Converse Tx 78109,LIVE,,7803,
 2026-11-23 16:49:56,Hubzu|91717145823,701 Cobb Mill Rd Woodville Tx 75979,LIVE,,7788,
+2026-11-23 16:51:09,ServiceLink|10765-state-highway-19-s-athens-75751-tx-united-states-cwt,10765 State Highway 19 S,LIVE,115000.0,,Not met
+2026-11-23 16:51:37,Hubzu|91717145823,701 Cobb Mill Rd Woodville Tx 75979,LIVE(card),,7705,
+2026-11-23 16:51:41,Auction.com|2256845,1206 Cottonwood Ln Denton Tx 2256845,LIVE,52577.0,13620,Not met
+2026-11-23 16:51:47,Xome|426771548,2211 Caroline Park Ln Spring Tx 77386 426771548,LIVE,187500.0,2289,Not met
+2026-11-23 16:51:54,Hubzu|94317580819,8055 Chestnut Barr Dr Converse Tx 78109,LIVE(card),,7688,
+2026-11-23 16:52:08,Hubzu|501162861909,3914 Tierra Escondida Weslaco Tx 78596,LIVE(card),,,
+2026-11-23 16:52:21,ServiceLink|7329-county-rd-610-skidmore-78389-tx-united-states-cwt,7329 County Rd 610,LIVE,99000.0,,Not met
+2026-11-23 16:52:21,Xome|418954799,1905 W Morton St Apt 12 Denison Tx 75020 418954799,LIVE,45500.0,3753,Not met
+2026-11-23 16:52:14,Hubzu|94117654443,602 E Navasota St Groesbeck Tx 76642,LIVE,,349650,
+2026-11-23 16:52:27,ServiceLink|1102-s-2nd-st-killeen-76541-tx-united-states-cwt,1102 S 2nd St,LIVE,64000.0,,Not met
+2026-11-23 16:52:31,ServiceLink|1218-county-road-339-ranger-76470-tx-united-states-cwt,1218 County Road 339,LIVE,207000.0,,Not met
+2026-11-23 16:52:53,Auction.com|2255945,5307 Castle Cv San Antonio Tx 2255945,LIVE,46000.0,12480,Not met
+2026-11-23 16:52:45,Hubzu|93917494683,100 S Levy St Pilot Point Tx 76258,LIVE,,7619,
