@@ -34645,3 +34645,167 @@ time,id,address,status,bid,seconds_left,reserve
 2026-11-23 12:28:56,ServiceLink|2563-pinehurst-dr-west-columbia-77486-tx-united-states-cwt,2563 Pinehurst Dr,LIVE,111000.0,,Not met
 2026-11-23 12:28:59,ServiceLink|1616-bonham-st-west-orange-77630-tx-united-states-cwt,1616 Bonham St,LIVE,25000.0,,Not met
 2026-11-23 12:29:00,ServiceLink|15702-winding-moss-drive-houston-77068-tx-united-states-cwt,15702 Winding Moss Drive,LIVE,157000.0,,Not met
+2026-11-23 12:28:59,Xome|417717409,4098 Playa Rd Ropesville Tx 79358 417717409,LIVE,,25856,Not met
+2026-11-23 12:29:02,Hubzu|94517742367,12210 Deer Trail Frisco Tx 75035,UNKNOWN,,,
+2026-11-23 12:29:03,ServiceLink|1213-arapahoe-midland-79705-tx-united-states-cwt,1213 Arapahoe,LIVE,75000.0,,Not met
+2026-11-23 12:29:00,Auction.com|2240440,837 Margay Loop Seguin Tx 2240440,UNKNOWN,,,
+2026-11-23 12:29:05,ServiceLink|4342-seabrook-dr-san-antonio-78219-tx-united-states-cwt,4342 Seabrook Dr,LIVE,55000.0,,Not met
+2026-11-23 12:29:05,ServiceLink|114-kim-dr-del-rio-78840-tx-united-states-cwt,114 Kim Dr,LIVE,86000.0,,Not met
+2026-11-23 12:29:07,ServiceLink|910-rosewick-st-houston-77015-tx-united-states-cwt,910 Rosewick St,LIVE,97000.0,,Not met
+2026-11-23 12:29:04,Auction.com|2239274,6038 Parkdale Dr Dallas Tx 2239274,UNKNOWN,,,
+2026-11-23 12:28:52,Hubzu|91717701891,625 Delano St Waco Tx 76704,LIVE,,106252,
+2026-11-23 12:29:08,ServiceLink|2415-country-oaks-circle-ingleside-78362-tx-united-states-cwt,2415 Country Oaks Circle,LIVE,151000.0,,Not met
+2026-11-23 12:29:10,ServiceLink|19538-enchanted-oaks-dr-spring-77388-tx-united-states-cwt,19538 Enchanted Oaks Dr,LIVE,95000.0,,Not met
+2026-11-23 12:29:14,Hubzu|94517742367,12210 Deer Trail Frisco Tx 75035,LIVE(card),,,
+2026-11-23 12:29:14,Hubzu|50168874643,720 N Padre Ave Weslaco Tx 78596,LIVE(card),107000.0,30648,
+2026-11-23 12:29:14,Hubzu|501226485852,514 Los Palomos Weslaco Tx 78596,LIVE(card),216000.0,30647,
+2026-11-23 12:29:14,Hubzu|94517601100,20707 Greenpark Dr Lago Vista Tx 78645,LIVE(card),,52247,
+2026-11-23 12:29:11,ServiceLink|502-n-7th-st-copperas-cove-76522-tx-united-states-cwt,502 N 7Th St,LIVE,51000.0,,Not met
+2026-11-23 12:28:59,Hubzu|93917494683,100 S Levy St Pilot Point Tx 76258,LIVE,,23446,
+2026-11-23 12:29:09,Auction.com|2254158,2160 6Th St Ingleside Tx 2254158,UNKNOWN,,,
+2026-11-23 12:29:09,Auction.com|2254166,17335 Wigeon Way Dr Humble Tx 2254166,UNKNOWN,,,
+2026-11-23 12:29:14,ServiceLink|135-bush-dr-venus-76084-tx-united-states-cwt,135 Bush Dr,LIVE,150000.0,,Not met
+2026-11-23 12:29:20,Hubzu|91717701891,625 Delano St Waco Tx 76704,LIVE(card),,,
+2026-11-23 12:29:20,Hubzu|94117656339,316 S Madero St Crystal City Tx 78839,LIVE(card),,,
+2026-11-23 12:29:20,Hubzu|94517810858,709 38Th Street Galveston Tx 77550,LIVE(card),,,
+2026-11-23 12:29:20,Hubzu|94517602011,2501 Rose Bay Dr Pearland Tx 77584,LIVE(card),,,
+2026-11-23 12:29:17,Hubzu|94617832183,12639 Ashford Meadow Dr Houston Tx 77082,LIVE,,,
+2026-11-23 12:29:15,Xome|414482648,318 Rexford Dr San Antonio Tx 78216 414482648,LIVE,122500.0,30340,Not met
+2026-11-23 12:29:12,Auction.com|2254221,5520 Sarah Anne Ave El Paso Tx 2254221,UNKNOWN,,,
+2026-11-23 12:29:15,Xome|409290141,206 Threadneedle Ln San Antonio Tx 78227 409290141,LIVE,,30339,Not met
+2026-11-23 12:29:05,Hubzu|94517653777,128 Gloria Boulevard Smithville Tx 78957,UNKNOWN,,,
+2026-11-23 12:29:20,ServiceLink|1734-compass-rose-dr-angleton-77515-tx-united-states-cwt,1734 Compass Rose Dr,LIVE,121000.0,,Not met
+2026-11-23 12:29:16,Auction.com|2254223,13359 Villagrove Dr Houston Tx 2254223,UNKNOWN,,,
+2026-11-23 12:29:21,Auction.com|2195678,632 Candace Ct Seguin Tx 2195678,UNKNOWN,,,
+2026-11-23 12:29:25,Hubzu|94517742726,7222 Foxvista Lane Humble Tx 77338,LIVE(card),,,
+2026-11-23 12:29:25,Hubzu|94117654443,602 E Navasota St Groesbeck Tx 76642,LIVE(card),,,
+2026-11-23 12:29:23,Auction.com|2244493,632 Candace Ct Seguin Tx 2244493,UNKNOWN,,,
+2026-11-23 12:29:20,Auction.com|2254241,3101 N Century Ave Odessa Tx 2254241,UNKNOWN,,,
+2026-11-23 12:29:22,Auction.com|2254244,8206 Misty Cedar Dr Converse Tx 2254244,UNKNOWN,,,
+2026-11-23 12:29:21,Auction.com|2254242,4915 Arbor Ridge Dr San Antonio Tx 2254242,UNKNOWN,,,
+2026-11-23 12:29:25,Xome|423235263,2512 Eastbrook Dr Mesquite Tx 75150 423235263,LIVE,,26430,Not met
+2026-11-23 12:29:23,Auction.com|2254250,4008 Prickly Pear Ave Aubrey Tx 2254250,UNKNOWN,,,
+2026-11-23 12:29:32,Hubzu|93917494683,100 S Levy St Pilot Point Tx 76258,LIVE(card),,23429,
+2026-11-23 12:29:29,Xome|420785739,1600 S Wall Street Brady Tx 76825 420785739,LIVE,,26427,Not met
+2026-11-23 12:29:28,Auction.com|2075897,843 White Pine Haven Ln Crosby Tx 2075897,UNKNOWN,,,
+2026-11-23 12:29:29,Auction.com|2254259,2409 Drifting Leaf Dr Cedar Park Tx 2254259,UNKNOWN,,,
+2026-11-23 12:29:30,Auction.com|2254262,10410 Winter Orchid Way Houston Tx 2254262,UNKNOWN,,,
+2026-11-23 12:29:38,Hubzu|91717701894,10922 W Early Dusk Cir Houston Tx 77044,LIVE(card),,,
+2026-11-23 12:29:38,Hubzu|501132215463,12906 Fort Belknap San Antonio Tx 78245,LIVE(card),399000.0,,
+2026-11-23 12:29:38,Hubzu|501801708877,1513 Thompson Rd Mission Tx 78573,LIVE(card),125000.0,,
+2026-11-23 12:29:38,Hubzu|501649684151,2007 Brookmont Conroe Tx 77301,LIVE(card),338000.0,,
+2026-11-23 12:29:28,Auction.com|2254257,2335 Spring Hollow Dr Baytown Tx 2254257,UNKNOWN,,,
+2026-11-23 12:29:36,Xome|428378968,623 S Baugh St Alvarado Tx 76009 428378968,LIVE,,26423,Not met
+2026-11-23 12:29:31,Auction.com|2123281,17718 Wooded Trl Conroe Tx 2123281,UNKNOWN,,,
+2026-11-23 12:29:33,Auction.com|2254263,42454 Quail Valley Ln Magnolia Tx 2254263,UNKNOWN,,,
+2026-11-23 12:29:35,Auction.com|2109757,254 Shaw Creek Blvd Ferris Tx 2109757,UNKNOWN,,,
+2026-11-23 12:29:39,ServiceLink|605-vista-ave-baytown-77520-tx-united-states-cwt,605 Vista Ave,LIVE,51000.0,,Not met
+2026-11-23 12:29:43,Hubzu|94617743194,16543 Inwood Cove Dr San Antonio Tx 78248,LIVE(card),,,
+2026-11-23 12:29:43,Hubzu|94617858292,6024 Beall St Houston Tx 77091,LIVE(card),,,
+2026-11-23 12:29:43,Hubzu|94617830921,7503 Maribeth Dr Dallas Tx 75252,LIVE(card),,,
+2026-11-23 12:29:43,Hubzu|94617832796,3665 Tilden Trl New Braunfels Tx 78132,LIVE(card),,,
+2026-11-23 12:29:37,Auction.com|2155931,10327 Whitingham Dr Dallas Tx 2155931,UNKNOWN,,,
+2026-11-23 12:29:38,Auction.com|2143812,1603 Audrey Dr Royse City Tx 2143812,UNKNOWN,,,
+2026-11-23 12:29:39,Auction.com|2254269,2606 Cobble Ridge Dr Sugar Land Tx 2254269,UNKNOWN,,,
+2026-11-23 12:29:42,Auction.com|2254270,8626 Winters Edge Dr Richmond Tx 2254270,UNKNOWN,,,
+2026-11-23 12:29:42,Auction.com|2254278,1903 N Main St Bonham Tx 2254278,UNKNOWN,,,
+2026-11-23 12:29:50,Hubzu|94617830909,2000 Bagby St Houston Tx 77002,LIVE(card),,,
+2026-11-23 12:29:50,Hubzu|94617861766,6030 Beall St Houston Tx 77091,LIVE(card),,,
+2026-11-23 12:29:50,Hubzu|94617866034,718 Prattsford Lane Houston Tx 77090,LIVE(card),,,
+2026-11-23 12:29:50,Hubzu|94317725225,23318 Campwood Terrace Ln Katy Tx 77493,LIVE(card),,,
+2026-11-23 12:29:50,Hubzu|94317806401,120 County Road 3669B Splendora Tx 77372,LIVE(card),,,
+2026-11-23 12:29:50,Hubzu|94317654887,25154 Bells Canyon Dr Porter Tx 77365,LIVE(card),,,
+2026-11-23 12:29:50,Hubzu|94317675115,3302 Prestwick St Edinburg Tx 78542,LIVE(card),,,
+2026-11-23 12:29:50,Hubzu|94617861800,109 Lunar Dr Donna Tx 78537,LIVE(card),,,
+2026-11-23 12:29:50,Hubzu|94617674922,1615 Enfield Rd Austin Tx 78703,LIVE(card),,,
+2026-11-23 12:29:50,Hubzu|94617807747,103 Hilltop Dr Trinidad Tx 75163,LIVE(card),,,
+2026-11-23 12:29:45,Auction.com|2254280,14506 Golden Cypress Ln Cypress Tx 2254280,UNKNOWN,,,
+2026-11-23 12:29:46,Auction.com|2241304,228 Bryan Way Angleton Tx 2241304,UNKNOWN,,,
+2026-11-23 12:29:46,Auction.com|2227460,9618 Broken Bow Rd Dallas Tx 2227460,UNKNOWN,,,
+2026-11-23 12:29:48,Auction.com|2254282,40342 Bay Warbler Way Magnolia Tx 2254282,UNKNOWN,,,
+2026-11-23 12:29:48,Auction.com|2212525,904 N Heideke St Seguin Tx 2212525,UNKNOWN,,,
+2026-11-23 12:29:55,Hubzu|87917811351,17323 Wigeon Way Dr Humble Tx 77396,LIVE(card),,,
+2026-11-23 12:29:55,Hubzu|94617858288,16807 Mission Ridge Ln Houston Tx 77073,LIVE(card),,,
+2026-11-23 12:29:55,Hubzu|94617832183,12639 Ashford Meadow Dr Houston Tx 77082,LIVE(card),,,
+2026-11-23 12:29:55,Hubzu|94317834217,14634 Monterey Cypress Dr Houston Tx 77068,LIVE(card),,,
+2026-11-23 12:29:55,Hubzu|94317811445,2422 Silver Oak Ave Mission Tx 78574,LIVE(card),,,
+2026-11-23 12:29:41,Hubzu|94517811143,2028 Brooke Drive Sanger Tx 76266,LIVE,,121743,
+2026-11-23 12:29:54,ServiceLink|7923-thompson-rd-highlands-77562-tx-united-states-cwt,7923 Thompson Rd,LIVE,57000.0,,Not met
+2026-11-23 12:29:54,ServiceLink|2014-jerry-st-denison-75020-tx-united-states-cwt,2014 Jerry St,LIVE,95000.0,,Not met
+2026-11-23 12:29:52,Auction.com|2254286,8419 Alvararo Bay Dr Cypress Tx 2254286,UNKNOWN,,,
+2026-11-23 12:29:53,Auction.com|2254299,7513 Hewitt Mckinney Tx 2254299,UNKNOWN,,,
+2026-11-23 12:29:53,Auction.com|2242587,1601 9Th St Brownwood Tx 2242587,UNKNOWN,,,
+2026-11-23 12:30:02,Hubzu|94617831345,321 Oakhurst Dr Seagoville Tx 75159,LIVE(card),,,
+2026-11-23 12:30:02,Hubzu|94317603290,5602 Chuckwagon Cir Killeen Tx 76542,LIVE(card),,,
+2026-11-23 12:30:02,Hubzu|94317834215,5621 Salt Springs Dr Fort Worth Tx 76179,LIVE(card),,,
+2026-11-23 12:30:02,Hubzu|94617831137,16605 Dry Creek Blvd Prosper Tx 75078,LIVE(card),,,
+2026-11-23 12:29:58,ServiceLink|11214-sagepark-ln-houston-77089-tx-united-states-cwt,11214 Sagepark Ln,LIVE,130000.0,,Not met
+2026-11-23 12:29:58,ServiceLink|136-lockwood-road-red-rock-78662-tx-united-states-cwt,136 Lockwood Road,LIVE,186000.0,,Not met
+2026-11-23 12:29:58,ServiceLink|729-county-road-2601-alto-75925-tx-united-states-cwt,729 County Road 2601,LIVE,88000.0,,Not met
+2026-11-23 12:29:57,Auction.com|2242589,14826 Easingwold Dr Houston Tx 2242589,UNKNOWN,,,
+2026-11-23 12:30:03,ServiceLink|15035-memorial-dr-splendora-77372-tx-united-states-cwt,15035 Memorial Dr,LIVE,106000.0,,Not met
+2026-11-23 12:30:02,ServiceLink|5708-kentucky-st-joshua-76058-tx-united-states-cwt,5708 Kentucky St,LIVE,74000.0,,Not met
+2026-11-23 12:30:01,Auction.com|2249444,277 Allegheny Dr Burleson Tx 2249444,LIVE,2500.0,,
+2026-11-23 12:30:02,Auction.com|2249453,828 S San Eduardo Ave San Antonio Tx 2249453,LIVE,2500.0,,
+2026-11-23 12:30:02,Auction.com|2249438,14328 Tobe Davis Horizon City Tx 2249438,LIVE,2500.0,,
+2026-11-23 12:30:05,ServiceLink|3114-freeboard-dr-texas-city-77510-tx-united-states-cwt,3114 Freeboard Dr,LIVE,141000.0,,Not met
+2026-11-23 12:30:09,Hubzu|94317812653,125 E Williamson Ave Harlingen Tx 78550,LIVE(card),,,
+2026-11-23 12:30:09,Hubzu|94617720004,7511 Briar Run Ct Missouri City Tx 77489,LIVE(card),,,
+2026-11-23 12:30:09,Hubzu|94617861781,4709 Scott Rd Pearland Tx 77581,LIVE(card),,,
+2026-11-23 12:30:06,ServiceLink|215-burke-ave-san-antonio-78225-tx-united-states-cwt,215 Burke Ave,LIVE,26000.0,,Not met
+2026-11-23 12:30:07,ServiceLink|822-county-rd-ne-2170-mount-vernon-75457-tx-united-states-cwt,822 County Rd Ne 2170,LIVE,84000.0,,Not met
+2026-11-23 12:30:07,ServiceLink|11311-w-26th-st-odessa-79763-tx-united-states-cwt,11311 W 26th St,LIVE,109000.0,,Not met
+2026-11-23 12:30:08,ServiceLink|325-county-rd-893-angleton-77515-tx-united-states-cwt,325 County Rd 893,LIVE,162500.0,,Not met
+2026-11-23 12:30:08,ServiceLink|1310-e-fordyce-ave-kingsville-78363-tx-united-states-cwt,1310 E Fordyce Ave,LIVE,58000.0,,Not met
+2026-11-23 12:30:15,Hubzu|94617807817,2303 Cedrick Cove Unit C Austin Tx 78748,LIVE(card),,,
+2026-11-23 12:30:15,Hubzu|94617807789,29111 Innes Park Pl Katy Tx 77494,LIVE(card),,,
+2026-11-23 12:30:15,Hubzu|94617832795,2303 Cedrick Cove Unit D Austin Tx 78748,LIVE(card),,,
+2026-11-23 12:30:15,Hubzu|94617832784,8539 Astral Pl San Antonio Tx 78252,LIVE(card),,,
+2026-11-23 12:30:09,ServiceLink|332-bob-white-dr-red-oak-75154-tx-united-states-cwt,332 Bob White Dr,LIVE,155000.0,,Not met
+2026-11-23 12:30:11,ServiceLink|243-goodhue-ave-san-antonio-78218-tx-united-states-cwt,243 Goodhue Ave,LIVE,82000.0,,Not met
+2026-11-23 12:30:12,ServiceLink|1204-e-malloy-bridge-rd-seagoville-75159-tx-united-states-cwt,1204 E Malloy Bridge Rd,LIVE,95000.0,,Not met
+2026-11-23 12:30:12,ServiceLink|10280-state-highway-172-lolita-77971-tx-united-states-cwt,10280 State Highway 172,LIVE,60000.0,,Not met
+2026-11-23 12:30:12,ServiceLink|947-county-road-1131-cumby-75433-tx-united-states-cwt,947 County Road 1131,LIVE,59000.0,,Not met
+2026-11-23 12:30:14,ServiceLink|21911-scopeto-ln-new-caney-77357-tx-united-states-cwt,21911 Scopeto Ln,LIVE,113000.0,,Not met
+2026-11-23 12:30:15,ServiceLink|18234-walden-gate-ln-cypress-77433-tx-united-states-cwt,18234 Walden Gate Ln,LIVE,99000.0,,Not met
+2026-11-23 12:30:15,ServiceLink|410-young-st-blossom-75416-tx-united-states-cwt,410 Young St,LIVE,42000.0,,Not met
+2026-11-23 12:30:16,ServiceLink|5312-belknap-dr-southmayd-76268-tx-united-states-cwt,5312 Belknap Dr,LIVE,77000.0,,Not met
+2026-11-23 12:30:17,ServiceLink|13431-sanderford-ln-houston-77083-tx-united-states-cwt,13431 Sanderford Ln,LIVE,123000.0,,Not met
+2026-11-23 12:30:18,ServiceLink|821-mulberry-lane-brazoria-77422-tx-united-states-cwt,821 Mulberry Lane,LIVE,97000.0,,Not met
+2026-11-23 12:30:20,ServiceLink|4940-park-st-beaumont-77705-tx-united-states-cwt,4940 Park St,LIVE,81000.0,,Not met
+2026-11-23 12:30:17,Auction.com|2228354,1303 Sleepy Hollow Ln Longview Tx 2228354,UNKNOWN,,,
+2026-11-23 12:30:20,Hubzu|94517719279,7333 N 5Th Street Mc Allen Tx 78504,UNKNOWN,,,
+2026-11-23 12:30:21,Auction.com|2243865,10406 Owens Lake Dr Rosharon Tx 2243865,UNKNOWN,,,
+2026-11-23 12:30:21,Auction.com|2234597,1049 Liberty Pkwy Allen Tx 2234597,UNKNOWN,,,
+2026-11-23 12:30:22,Auction.com|2251308,5506 Parkstone Ct Sugar Land Tx 2251308,UNKNOWN,,,
+2026-11-23 12:30:24,Auction.com|2201510,6418 Fiddlewood Thicket Ln Katy Tx 2201510,UNKNOWN,,,
+2026-11-23 12:30:25,Auction.com|2245471,411 N Carpenter St Mart Tx 2245471,LIVE,2500.0,9180,Not met
+2026-11-23 12:30:28,Hubzu|501330659914,7704 N 5Th St Mc Allen Tx 78504,LIVE,,0,
+2026-11-23 12:30:28,Auction.com|2246675,215 Blanco Dr Portland Tx 2246675,LIVE,125000.0,16260,Not met
+2026-11-23 12:30:29,Auction.com|2225398,2729 Crystal Falls Dr Mesquite Tx 2225398,UNKNOWN,,,
+2026-11-23 12:30:30,Auction.com|2216178,15231 White Moss Dr New Caney Tx 2216178,UNKNOWN,,,
+2026-11-23 12:30:31,Auction.com|2191277,6411 Carnaby Ln Rosenberg Tx 2191277,UNKNOWN,,,
+2026-11-23 12:30:32,Auction.com|2216861,7211 Runyon Ct Rosharon Tx 2216861,UNKNOWN,,,
+2026-11-23 12:30:33,Auction.com|2191413,12805 Door Bell Dr Manor Tx 2191413,UNKNOWN,,,
+2026-11-23 12:30:37,Xome|423581227,3925 Eloise St Beaumont Tx 77707 423581227,LIVE,,28758,Not met
+2026-11-23 12:30:36,Auction.com|2211133,1423 E 35Th St Odessa Tx 2211133,LIVE,60000.0,20340,Not met
+2026-11-23 12:30:25,Auction.com|2227709,9408 N 17Th St Mcallen Tx 2227709,UNKNOWN,,,
+2026-11-23 12:30:38,Auction.com|2239849,410 S Bouldin St Hamilton Tx 2239849,LIVE,62000.0,16860,Not met
+2026-11-23 12:30:39,Auction.com|2239867,101 Hyde Away Ln Weatherford Tx 2239867,LIVE,2500.0,16560,Not met
+2026-11-23 12:30:42,Hubzu|91717009157,21339 Park York Dr Katy Tx 77450,LIVE,,16156,
+2026-11-23 12:30:39,Auction.com|2185819,1901 Suanne Dr Tyler Tx 2185819,UNKNOWN,,,
+2026-11-23 12:30:42,Auction.com|2239883,237 7Th St San Leon Tx 2239883,LIVE,2500.0,16320,Not met
+2026-11-23 12:30:44,Auction.com|2241633,614 Beckworth St Sulphur Spgs Tx 2241633,LIVE,45500.0,16740,Not met
+2026-11-23 12:30:46,Auction.com|2239911,302 Se 4Th St Andrews Tx 2239911,LIVE,2500.0,16620,Not met
+2026-11-23 12:30:44,Auction.com|2215975,831 E Highland Rd Red Oak Tx 2215975,UNKNOWN,,,
+2026-11-23 12:30:45,Auction.com|2227476,4917 Plantation Ln Frisco Tx 2227476,UNKNOWN,,,
+2026-11-23 12:30:47,Auction.com|2210143,448 Letara Ranch Rd Haslet Tx 2210143,UNKNOWN,,,
+2026-11-23 12:30:46,Auction.com|2215136,2104 Homestead Dr Desoto Tx 2215136,UNKNOWN,,,
+2026-11-23 12:30:53,ServiceLink|1733-holt-st-fort-worth-76103-tx-united-states-cwt,1733 Holt St,LIVE,131000.0,,Not met
+2026-11-23 12:30:53,ServiceLink|60-stephens-rd-cleveland-77328-tx-united-states-cwt,60 Stephens Rd,LIVE,172000.0,,Not met
+2026-11-23 12:30:52,Auction.com|2239945,100 Smith St Naples Tx 2239945,LIVE,2500.0,16860,Not met
+2026-11-23 12:30:51,Auction.com|2239925,215 Blanco Dr Portland Tx 2239925,LIVE,125000.0,16260,Not met
+2026-11-23 12:30:57,Auction.com|2239842,2009 Apache Rd Quinlan Tx 2239842,LIVE,2500.0,17100,Not met
+2026-11-23 12:30:58,Auction.com|2246498,2009 Apache Rd Quinlan Tx 2246498,LIVE,2500.0,17100,Not met
+2026-11-23 12:30:59,ServiceLink|4741-woodhaven-ln-haltom-city-76137-tx-united-states-cwt,4741 Woodhaven Ln,LIVE,198000.0,,Not met
+2026-11-23 12:31:00,Auction.com|2239864,4423 W Oak Trl Granbury Tx 2239864,LIVE,2500.0,16680,Not met
