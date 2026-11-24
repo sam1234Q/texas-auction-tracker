@@ -32119,3 +32119,8 @@ time,id,address,status,bid,seconds_left,reserve
 2026-11-24 14:52:23,Hubzu|90017865120,607 Sunset Blvd Lufkin Tx 75904,LIVE(card),,,
 2026-11-24 14:52:21,Auction.com|2244315,75 Windsong Ln Rocksprings Tx 2244315,LIVE,3500.0,15000,Not met
 2026-11-24 14:52:11,Hubzu|89117699914,2218 Joliet St Plainview Tx 79072,LIVE,,269733,
+2026-11-24 14:53:01,Auction.com|2244171,3101 N Century Ave Odessa Tx 2244171,LIVE,40000.0,12840,Not met
+2026-11-24 14:53:31,Auction.com|2236844,502 W A Ave Kingsville Tx 2236844,UNKNOWN,,,
+2026-11-24 14:54:35,Auction.com|2251319,10711 Sandpiper Dr Houston Tx 2251319,LIVE,50001.0,19740,Not met
+2026-11-24 14:54:55,Auction.com|2251589,75 Windsong Ln Rocksprings Tx 2251589,LIVE,3500.0,14880,Not met
+2026-11-24 14:55:13,Hubzu|89117699914,2218 Joliet St Plainview Tx 79072,LIVE(card),,,
