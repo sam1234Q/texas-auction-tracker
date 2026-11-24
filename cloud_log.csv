@@ -32745,3 +32745,7 @@ time,id,address,status,bid,seconds_left,reserve
 2026-11-24 15:46:29,Auction.com|2236273,2713 Nw 35Th St Fort Worth Tx 2236273,UNKNOWN,,,
 2026-11-24 15:46:51,Hubzu|94617830895,2926 Frankfort Ave El Paso Tx 79930,LIVE,,,
 2026-11-24 15:46:52,Hubzu|87917830121,3409 Perman Dr Forney Tx 75126,LIVE,,,
+2026-11-24 15:47:35,ServiceLink|1218-county-road-339-ranger-76470-tx-united-states-cwt,1218 County Road 339,LIVE,257000.0,,Not met
+2026-11-24 15:48:32,ServiceLink|1401-independence-st-plainview-79072-tx-united-states-cwt,1401 Independence St,LIVE,61500.0,,Met
+2026-11-24 15:48:39,Auction.com|2251088,9611 Private Road 3826 Quinlan Tx 2251088,LIVE,60000.0,2790,Not met
+2026-11-24 15:48:52,Hubzu|91717806988,3109 Hoyle St Mc Kinney Tx 75071,LIVE,,7865,
