@@ -31525,3 +31525,6 @@ time,id,address,status,bid,seconds_left,reserve
 2026-11-24 13:37:03,Hubzu|94517742726,7222 Foxvista Lane Humble Tx 77338,LIVE,,259301,
 2026-11-24 13:37:17,Hubzu|94117474137,1208 N 7Th St Wichita Falls Tx 76306,LIVE,,259301,
 2026-11-24 13:37:53,Auction.com|2233939,505 Avenue E Victoria Tx 2233939,LIVE,10001.0,19440,Not met
+2026-11-24 13:38:55,Auction.com|2244276,505 Avenue E Victoria Tx 2244276,LIVE,10001.0,19380,Not met
+2026-11-24 13:40:16,Hubzu|94117474137,1208 N 7Th St Wichita Falls Tx 76306,LIVE(card),,,
+2026-11-24 13:40:21,Hubzu|94517742726,7222 Foxvista Lane Humble Tx 77338,LIVE(card),,,
