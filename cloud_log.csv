@@ -32763,3 +32763,13 @@ time,id,address,status,bid,seconds_left,reserve
 2026-11-24 15:51:49,Hubzu|501132215463,12906 Fort Belknap San Antonio Tx 78245,LIVE,,18488,
 2026-11-24 15:52:47,Hubzu|94317602354,175 Private Road 4420 Rhome Tx 76078,LIVE,,0,
 2026-11-24 15:52:34,Auction.com|2241236,2732 Trophy Club Dr Trophy Club Tx 2241236,UNKNOWN,,,
+2026-11-24 15:53:47,Auction.com|2243698,2614 Bayou Dr Angleton Tx 2243698,LIVE,2500.0,3660,Not met
+2026-11-24 15:53:49,Hubzu|501938942522,8803 Pertshire St San Antonio Tx 78254,LIVE,,18368,
+2026-11-24 15:53:56,Auction.com|2244120,242 Ezekial Ave Dallas Tx 2244120,LIVE,35000.0,400,Not met
+2026-11-24 15:53:59,Auction.com|2251411,204 S 4Th St Celeste Tx 2251411,LIVE,37500.0,7980,Not met
+2026-11-24 15:54:03,ServiceLink|171-hurst-place-blvd-lampass-76550-tx-united-states-trd,171 Hurst Place Blvd,LIVE,182000.0,,Not met
+2026-11-24 15:54:07,Auction.com|2225296,204 S 4Th St Celeste Tx 2225296,UNKNOWN,,,
+2026-11-24 15:54:38,Hubzu|94317602354,175 Private Road 4420 Rhome Tx 76078,LIVE(card),,11124,
+2026-11-24 15:54:38,Hubzu|501938942522,8803 Pertshire St San Antonio Tx 78254,LIVE(card),250000.0,18324,
+2026-11-24 15:54:50,Hubzu|501132215463,12906 Fort Belknap San Antonio Tx 78245,LIVE(card),399000.0,18312,
+2026-11-24 15:54:48,Hubzu|94517602011,2501 Rose Bay Dr Pearland Tx 77584,LIVE,,10269,
