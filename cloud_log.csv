@@ -38310,3 +38310,7 @@ time,id,address,status,bid,seconds_left,reserve
 2026-11-25 01:14:52,Hubzu|94517653777,128 Gloria Boulevard Smithville Tx 78957,UNKNOWN,,,
 2026-11-25 01:15:08,Hubzu|94617832183,12639 Ashford Meadow Dr Houston Tx 77082,LIVE,,,
 2026-11-25 01:15:42,Hubzu|94517718175,709 W Live Oak St Angleton Tx 77515,LIVE,,9315,
+2026-11-25 01:18:11,Hubzu|94517653777,128 Gloria Boulevard Smithville Tx 78957,LIVE(card),,,
+2026-11-25 01:18:11,Hubzu|94517742367,12210 Deer Trail Frisco Tx 75035,LIVE(card),,,
+2026-11-25 01:18:11,Hubzu|94517718175,709 W Live Oak St Angleton Tx 77515,LIVE(card),,9171,
+2026-11-25 01:18:36,Hubzu|94617832183,12639 Ashford Meadow Dr Houston Tx 77082,LIVE(card),,,
