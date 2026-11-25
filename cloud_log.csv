@@ -30623,3 +30623,7 @@ time,id,address,status,bid,seconds_left,reserve
 2026-11-25 18:39:03,Auction.com|2262546,2802 Hollis Dr Corinth Tx 2262546,UPCOMING,2500.0,324000,
 2026-11-25 18:39:04,Auction.com|2262547,2822 Princeton St Houston Tx 2262547,UPCOMING,2500.0,324000,
 2026-11-25 18:39:05,Auction.com|2262548,2307 Sunset Bnd San Antonio Tx 2262548,UPCOMING,2500.0,324000,
+2026-11-25 18:40:50,Auction.com|2236728,6805 Sir Moses Corpus Christi Tx 2236728,LIVE,250000.0,11940,Met
+2026-11-25 18:41:01,Auction.com|2244371,6805 Sir Moses Corpus Christi Tx 2244371,LIVE,250000.0,11880,Met
+2026-11-25 18:41:26,Auction.com|2251648,6805 Sir Moses Corpus Christi Tx 2251648,LIVE,250000.0,11880,Met
+2026-11-25 18:41:34,Auction.com|2235509,3202 Longhorn Cir Manvel Tx 2235509,LIVE,434500.0,11880,Not met
