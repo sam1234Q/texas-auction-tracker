@@ -35676,3 +35676,8 @@ time,id,address,status,bid,seconds_left,reserve
 2026-11-26 01:41:58,Auction.com|2263685,7834 Nopalitos Cv San Antonio Tx 2263685,UPCOMING,2500.0,385200,
 2026-11-26 01:42:01,Auction.com|2263687,29997 Milam Ave San Benito Tx 2263687,UPCOMING,2500.0,385200,
 2026-11-26 01:42:01,Auction.com|2263684,1019 Danforth Ct Arlington Tx 2263684,UPCOMING,2500.0,385200,
+2026-11-26 01:43:21,Hubzu|94617861774,1302 Thompson Oilfield Rd Thompsons Tx 77481,LIVE,,,
+2026-11-26 01:43:30,Hubzu|501801708877,1513 Thompson Rd Mission Tx 78573,LIVE,,587775,
+2026-11-26 01:43:51,Hubzu|92517889507,425 W Apple St Odessa Tx 79766,LIVE(card),298000.0,58571,
+2026-11-26 01:43:59,Hubzu|501801708877,1513 Thompson Rd Mission Tx 78573,LIVE(card),,,
+2026-11-26 01:44:16,Hubzu|94617861774,1302 Thompson Oilfield Rd Thompsons Tx 77481,LIVE(card),,,
