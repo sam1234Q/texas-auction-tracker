@@ -31331,3 +31331,8 @@ time,id,address,status,bid,seconds_left,reserve
 2026-11-27 19:13:21,ServiceLink|190-county-road-860-evadale-77615-tx-united-states-cwt,190 County Road 860,LIVE,,,
 2026-11-27 19:13:51,ServiceLink|612-n-crosby-ave-tulia-79088-tx-united-states-cwt,612 N Crosby Ave,LIVE,,,
 2026-11-27 19:14:48,Hubzu|91717724825,13250 Wrangler St Corpus Christi Tx 78410,LIVE,,1035898,
+2026-11-27 19:15:58,Hubzu|501939920605,6942 Walnut Street Frisco Tx 75033,UNKNOWN,,,
+2026-11-27 19:16:14,Hubzu|91717724825,13250 Wrangler St Corpus Christi Tx 78410,LIVE(card),,,
+2026-11-27 19:16:11,Hubzu|501849128649,11338 Enclave Run San Antonio Tx 78213,UNKNOWN,,,
+2026-11-27 19:16:25,ServiceLink|57-lakeshore-ln-huntsville-77320-tx-united-states-trd,57 Lakeshore Ln,LIVE,,,
+2026-11-27 19:17:26,Hubzu|94117474132,343 Nw Martin Luther King Dr De Kalb Tx 75559,LIVE,,326539,
