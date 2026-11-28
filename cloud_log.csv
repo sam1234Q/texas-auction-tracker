@@ -36208,3 +36208,6 @@ time,id,address,status,bid,seconds_left,reserve
 2026-11-28 12:03:34,Hubzu|94517834343,104 Westwood Ln Kerrville Tx 78028,LIVE,,451812,
 2026-11-28 12:04:21,Hubzu|94117654443,602 E Navasota St Groesbeck Tx 76642,LIVE,,539724,
 2026-11-28 12:05:07,Hubzu|94617886909,14007 Briar Pl Dr Houston Tx 77077,LIVE,,,
+2026-11-28 12:07:12,Hubzu|94517834343,104 Westwood Ln Kerrville Tx 78028,LIVE(card),,,
+2026-11-28 12:07:12,Hubzu|94117654443,602 E Navasota St Groesbeck Tx 76642,LIVE(card),,,
+2026-11-28 12:07:28,Hubzu|94617886909,14007 Briar Pl Dr Houston Tx 77077,LIVE(card),,,
